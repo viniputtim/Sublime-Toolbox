@@ -1,0 +1,2900 @@
+{
+    "scope": "source.c, source.c++",
+    "completions": [
+        {
+            "trigger": "InitWindow",
+            "annotation": "Initialize window and OpenGL context",
+            "contents": "InitWindow(${1:width}, ${2:height}, ${3:*title})"
+        },
+        {
+            "trigger": "CloseWindow",
+            "annotation": "Close window and unload OpenGL context",
+            "contents": "CloseWindow()"
+        },
+        {
+            "trigger": "WindowShouldClose",
+            "annotation": "Check if application should close (KEY_ESCAPE pressed or windows close icon clicked)",
+            "contents": "WindowShouldClose()"
+        },
+        {
+            "trigger": "IsWindowReady",
+            "annotation": "Check if window has been initialized successfully",
+            "contents": "IsWindowReady()"
+        },
+        {
+            "trigger": "IsWindowFullscreen",
+            "annotation": "Check if window is currently fullscreen",
+            "contents": "IsWindowFullscreen()"
+        },
+        {
+            "trigger": "IsWindowHidden",
+            "annotation": "Check if window is currently hidden",
+            "contents": "IsWindowHidden()"
+        },
+        {
+            "trigger": "IsWindowMinimized",
+            "annotation": "Check if window is currently minimized",
+            "contents": "IsWindowMinimized()"
+        },
+        {
+            "trigger": "IsWindowMaximized",
+            "annotation": "Check if window is currently maximized",
+            "contents": "IsWindowMaximized()"
+        },
+        {
+            "trigger": "IsWindowFocused",
+            "annotation": "Check if window is currently focused",
+            "contents": "IsWindowFocused()"
+        },
+        {
+            "trigger": "IsWindowResized",
+            "annotation": "Check if window has been resized last frame",
+            "contents": "IsWindowResized()"
+        },
+        {
+            "trigger": "IsWindowState",
+            "annotation": "Check if one specific window flag is enabled",
+            "contents": "IsWindowState(${1:flag})"
+        },
+        {
+            "trigger": "SetWindowState",
+            "annotation": "Set window configuration state using flags",
+            "contents": "SetWindowState(${1:flags})"
+        },
+        {
+            "trigger": "ClearWindowState",
+            "annotation": "Clear window configuration state flags",
+            "contents": "ClearWindowState(${1:flags})"
+        },
+        {
+            "trigger": "ToggleFullscreen",
+            "annotation": "Toggle window state: fullscreen/windowed, resizes monitor to match window resolution",
+            "contents": "ToggleFullscreen()"
+        },
+        {
+            "trigger": "ToggleBorderlessWindowed",
+            "annotation": "Toggle window state: borderless windowed, resizes window to match monitor resolution",
+            "contents": "ToggleBorderlessWindowed()"
+        },
+        {
+            "trigger": "MaximizeWindow",
+            "annotation": "Set window state: maximized, if resizable",
+            "contents": "MaximizeWindow()"
+        },
+        {
+            "trigger": "MinimizeWindow",
+            "annotation": "Set window state: minimized, if resizable",
+            "contents": "MinimizeWindow()"
+        },
+        {
+            "trigger": "RestoreWindow",
+            "annotation": "Set window state: not minimized/maximized",
+            "contents": "RestoreWindow()"
+        },
+        {
+            "trigger": "SetWindowIcon",
+            "annotation": "Set icon for window (single image, RGBA 32bit)",
+            "contents": "SetWindowIcon(${1:image})"
+        },
+        {
+            "trigger": "SetWindowIcons",
+            "annotation": "Set icon for window (multiple images, RGBA 32bit)",
+            "contents": "SetWindowIcons(${1:*images}, ${2:count})"
+        },
+        {
+            "trigger": "SetWindowTitle",
+            "annotation": "Set title for window",
+            "contents": "SetWindowTitle(${1:*title})"
+        },
+        {
+            "trigger": "SetWindowPosition",
+            "annotation": "Set window position on screen",
+            "contents": "SetWindowPosition(${1:x}, ${2:y})"
+        },
+        {
+            "trigger": "SetWindowMonitor",
+            "annotation": "Set monitor for the current window",
+            "contents": "SetWindowMonitor(${1:monitor})"
+        },
+        {
+            "trigger": "SetWindowMinSize",
+            "annotation": "Set window minimum dimensions (for FLAG_WINDOW_RESIZABLE)",
+            "contents": "SetWindowMinSize(${1:width}, ${2:height})"
+        },
+        {
+            "trigger": "SetWindowMaxSize",
+            "annotation": "Set window maximum dimensions (for FLAG_WINDOW_RESIZABLE)",
+            "contents": "SetWindowMaxSize(${1:width}, ${2:height})"
+        },
+        {
+            "trigger": "SetWindowSize",
+            "annotation": "Set window dimensions",
+            "contents": "SetWindowSize(${1:width}, ${2:height})"
+        },
+        {
+            "trigger": "SetWindowOpacity",
+            "annotation": "Set window opacity [0.0f..1.0f]",
+            "contents": "SetWindowOpacity(${1:opacity})"
+        },
+        {
+            "trigger": "SetWindowFocused",
+            "annotation": "Set window focused",
+            "contents": "SetWindowFocused()"
+        },
+        {
+            "trigger": "GetWindowHandle",
+            "annotation": "Get native window handle",
+            "contents": "GetWindowHandle()"
+        },
+        {
+            "trigger": "GetScreenWidth",
+            "annotation": "Get current screen width",
+            "contents": "GetScreenWidth()"
+        },
+        {
+            "trigger": "GetScreenHeight",
+            "annotation": "Get current screen height",
+            "contents": "GetScreenHeight()"
+        },
+        {
+            "trigger": "GetRenderWidth",
+            "annotation": "Get current render width (it considers HiDPI)",
+            "contents": "GetRenderWidth()"
+        },
+        {
+            "trigger": "GetRenderHeight",
+            "annotation": "Get current render height (it considers HiDPI)",
+            "contents": "GetRenderHeight()"
+        },
+        {
+            "trigger": "GetMonitorCount",
+            "annotation": "Get number of connected monitors",
+            "contents": "GetMonitorCount()"
+        },
+        {
+            "trigger": "GetCurrentMonitor",
+            "annotation": "Get current monitor where window is placed",
+            "contents": "GetCurrentMonitor()"
+        },
+        {
+            "trigger": "GetMonitorPosition",
+            "annotation": "Get specified monitor position",
+            "contents": "GetMonitorPosition(${1:monitor})"
+        },
+        {
+            "trigger": "GetMonitorWidth",
+            "annotation": "Get specified monitor width (current video mode used by monitor)",
+            "contents": "GetMonitorWidth(${1:monitor})"
+        },
+        {
+            "trigger": "GetMonitorHeight",
+            "annotation": "Get specified monitor height (current video mode used by monitor)",
+            "contents": "GetMonitorHeight(${1:monitor})"
+        },
+        {
+            "trigger": "GetMonitorPhysicalWidth",
+            "annotation": "Get specified monitor physical width in millimetres",
+            "contents": "GetMonitorPhysicalWidth(${1:monitor})"
+        },
+        {
+            "trigger": "GetMonitorPhysicalHeight",
+            "annotation": "Get specified monitor physical height in millimetres",
+            "contents": "GetMonitorPhysicalHeight(${1:monitor})"
+        },
+        {
+            "trigger": "GetMonitorRefreshRate",
+            "annotation": "Get specified monitor refresh rate",
+            "contents": "GetMonitorRefreshRate(${1:monitor})"
+        },
+        {
+            "trigger": "GetWindowPosition",
+            "annotation": "Get window position XY on monitor",
+            "contents": "GetWindowPosition()"
+        },
+        {
+            "trigger": "GetWindowScaleDPI",
+            "annotation": "Get window scale DPI factor",
+            "contents": "GetWindowScaleDPI()"
+        },
+        {
+            "trigger": "GetMonitorName",
+            "annotation": "Get the human-readable, UTF-8 encoded name of the specified monitor",
+            "contents": "GetMonitorName(${1:monitor})"
+        },
+        {
+            "trigger": "SetClipboardText",
+            "annotation": "Set clipboard text content",
+            "contents": "SetClipboardText(${1:*text})"
+        },
+        {
+            "trigger": "GetClipboardText",
+            "annotation": "Get clipboard text content",
+            "contents": "GetClipboardText()"
+        },
+        {
+            "trigger": "GetClipboardImage",
+            "annotation": "Get clipboard image",
+            "contents": "GetClipboardImage()"
+        },
+        {
+            "trigger": "EnableEventWaiting",
+            "annotation": "Enable waiting for events on EndDrawing(), no automatic event polling",
+            "contents": "EnableEventWaiting()"
+        },
+        {
+            "trigger": "DisableEventWaiting",
+            "annotation": "Disable waiting for events on EndDrawing(), automatic events polling",
+            "contents": "DisableEventWaiting()"
+        },
+        {
+            "trigger": "ShowCursor",
+            "annotation": "Shows cursor",
+            "contents": "ShowCursor()"
+        },
+        {
+            "trigger": "HideCursor",
+            "annotation": "Hides cursor",
+            "contents": "HideCursor()"
+        },
+        {
+            "trigger": "IsCursorHidden",
+            "annotation": "Check if cursor is not visible",
+            "contents": "IsCursorHidden()"
+        },
+        {
+            "trigger": "EnableCursor",
+            "annotation": "Enables cursor (unlock cursor)",
+            "contents": "EnableCursor()"
+        },
+        {
+            "trigger": "DisableCursor",
+            "annotation": "Disables cursor (lock cursor)",
+            "contents": "DisableCursor()"
+        },
+        {
+            "trigger": "IsCursorOnScreen",
+            "annotation": "Check if cursor is on the screen",
+            "contents": "IsCursorOnScreen()"
+        },
+        {
+            "trigger": "ClearBackground",
+            "annotation": "Set background color (framebuffer clear color)",
+            "contents": "ClearBackground(${1:color})"
+        },
+        {
+            "trigger": "BeginDrawing",
+            "annotation": "Setup canvas (framebuffer) to start drawing",
+            "contents": "BeginDrawing()"
+        },
+        {
+            "trigger": "EndDrawing",
+            "annotation": "End canvas drawing and swap buffers (double buffering)",
+            "contents": "EndDrawing()"
+        },
+        {
+            "trigger": "BeginMode2D",
+            "annotation": "Begin 2D mode with custom camera (2D)",
+            "contents": "BeginMode2D(${1:camera})"
+        },
+        {
+            "trigger": "EndMode2D",
+            "annotation": "Ends 2D mode with custom camera",
+            "contents": "EndMode2D()"
+        },
+        {
+            "trigger": "BeginMode3D",
+            "annotation": "Begin 3D mode with custom camera (3D)",
+            "contents": "BeginMode3D(${1:camera})"
+        },
+        {
+            "trigger": "EndMode3D",
+            "annotation": "Ends 3D mode and returns to default 2D orthographic mode",
+            "contents": "EndMode3D()"
+        },
+        {
+            "trigger": "BeginTextureMode",
+            "annotation": "Begin drawing to render texture",
+            "contents": "BeginTextureMode(${1:target})"
+        },
+        {
+            "trigger": "EndTextureMode",
+            "annotation": "Ends drawing to render texture",
+            "contents": "EndTextureMode()"
+        },
+        {
+            "trigger": "BeginShaderMode",
+            "annotation": "Begin custom shader drawing",
+            "contents": "BeginShaderMode(${1:shader})"
+        },
+        {
+            "trigger": "EndShaderMode",
+            "annotation": "End custom shader drawing (use default shader)",
+            "contents": "EndShaderMode()"
+        },
+        {
+            "trigger": "BeginBlendMode",
+            "annotation": "Begin blending mode (alpha, additive, multiplied, subtract, custom)",
+            "contents": "BeginBlendMode(${1:mode})"
+        },
+        {
+            "trigger": "EndBlendMode",
+            "annotation": "End blending mode (reset to default: alpha blending)",
+            "contents": "EndBlendMode()"
+        },
+        {
+            "trigger": "BeginScissorMode",
+            "annotation": "Begin scissor mode (define screen area for following drawing)",
+            "contents": "BeginScissorMode(${1:x}, ${2:y}, ${3:width}, ${4:height})"
+        },
+        {
+            "trigger": "EndScissorMode",
+            "annotation": "End scissor mode",
+            "contents": "EndScissorMode()"
+        },
+        {
+            "trigger": "BeginVrStereoMode",
+            "annotation": "Begin stereo rendering (requires VR simulator)",
+            "contents": "BeginVrStereoMode(${1:config})"
+        },
+        {
+            "trigger": "EndVrStereoMode",
+            "annotation": "End stereo rendering (requires VR simulator)",
+            "contents": "EndVrStereoMode()"
+        },
+        {
+            "trigger": "LoadVrStereoConfig",
+            "annotation": "Load VR stereo config for VR simulator device parameters",
+            "contents": "LoadVrStereoConfig(${1:device})"
+        },
+        {
+            "trigger": "UnloadVrStereoConfig",
+            "annotation": "Unload VR stereo config",
+            "contents": "UnloadVrStereoConfig(${1:config})"
+        },
+        {
+            "trigger": "LoadShader",
+            "annotation": "Load shader from files and bind default locations",
+            "contents": "LoadShader(${1:*vsFileName}, ${2:*fsFileName})"
+        },
+        {
+            "trigger": "LoadShaderFromMemory",
+            "annotation": "Load shader from code strings and bind default locations",
+            "contents": "LoadShaderFromMemory(${1:*vsCode}, ${2:*fsCode})"
+        },
+        {
+            "trigger": "IsShaderValid",
+            "annotation": "Check if a shader is valid (loaded on GPU)",
+            "contents": "IsShaderValid(${1:shader})"
+        },
+        {
+            "trigger": "GetShaderLocation",
+            "annotation": "Get shader uniform location",
+            "contents": "GetShaderLocation(${1:shader}, ${2:*uniformName})"
+        },
+        {
+            "trigger": "GetShaderLocationAttrib",
+            "annotation": "Get shader attribute location",
+            "contents": "GetShaderLocationAttrib(${1:shader}, ${2:*attribName})"
+        },
+        {
+            "trigger": "SetShaderValue",
+            "annotation": "Set shader uniform value",
+            "contents": "SetShaderValue(${1:shader}, ${2:locIndex}, ${3:*value}, ${4:uniformType})"
+        },
+        {
+            "trigger": "SetShaderValueV",
+            "annotation": "Set shader uniform value vector",
+            "contents": "SetShaderValueV(${1:shader}, ${2:locIndex}, ${3:*value}, ${4:uniformType}, ${5:count})"
+        },
+        {
+            "trigger": "SetShaderValueMatrix",
+            "annotation": "Set shader uniform value (matrix 4x4)",
+            "contents": "SetShaderValueMatrix(${1:shader}, ${2:locIndex}, ${3:mat})"
+        },
+        {
+            "trigger": "SetShaderValueTexture",
+            "annotation": "Set shader uniform value for texture (sampler2d)",
+            "contents": "SetShaderValueTexture(${1:shader}, ${2:locIndex}, ${3:texture})"
+        },
+        {
+            "trigger": "UnloadShader",
+            "annotation": "Unload shader from GPU memory (VRAM)",
+            "contents": "UnloadShader(${1:shader})"
+        },
+        {
+            "trigger": "GetScreenToWorldRay",
+            "annotation": "Get a ray trace from screen position (i.e mouse)",
+            "contents": "GetScreenToWorldRay(${1:position}, ${2:camera})"
+        },
+        {
+            "trigger": "GetScreenToWorldRayEx",
+            "annotation": "Get a ray trace from screen position (i.e mouse) in a viewport",
+            "contents": "GetScreenToWorldRayEx(${1:position}, ${2:camera}, ${3:width}, ${4:height})"
+        },
+        {
+            "trigger": "GetWorldToScreen",
+            "annotation": "Get the screen space position for a 3d world space position",
+            "contents": "GetWorldToScreen(${1:position}, ${2:camera})"
+        },
+        {
+            "trigger": "GetWorldToScreenEx",
+            "annotation": "Get size position for a 3d world space position",
+            "contents": "GetWorldToScreenEx(${1:position}, ${2:camera}, ${3:width}, ${4:height})"
+        },
+        {
+            "trigger": "GetWorldToScreen2D",
+            "annotation": "Get the screen space position for a 2d camera world space position",
+            "contents": "GetWorldToScreen2D(${1:position}, ${2:camera})"
+        },
+        {
+            "trigger": "GetScreenToWorld2D",
+            "annotation": "Get the world space position for a 2d camera screen space position",
+            "contents": "GetScreenToWorld2D(${1:position}, ${2:camera})"
+        },
+        {
+            "trigger": "GetCameraMatrix",
+            "annotation": "Get camera transform matrix (view matrix)",
+            "contents": "GetCameraMatrix(${1:camera})"
+        },
+        {
+            "trigger": "GetCameraMatrix2D",
+            "annotation": "Get camera 2d transform matrix",
+            "contents": "GetCameraMatrix2D(${1:camera})"
+        },
+        {
+            "trigger": "SetTargetFPS",
+            "annotation": "Set target FPS (maximum)",
+            "contents": "SetTargetFPS(${1:fps})"
+        },
+        {
+            "trigger": "GetFrameTime",
+            "annotation": "Get time in seconds for last frame drawn (delta time)",
+            "contents": "GetFrameTime()"
+        },
+        {
+            "trigger": "GetTime",
+            "annotation": "Get elapsed time in seconds since InitWindow()",
+            "contents": "GetTime()"
+        },
+        {
+            "trigger": "GetFPS",
+            "annotation": "Get current FPS",
+            "contents": "GetFPS()"
+        },
+        {
+            "trigger": "SwapScreenBuffer",
+            "annotation": "Swap back buffer with front buffer (screen drawing)",
+            "contents": "SwapScreenBuffer()"
+        },
+        {
+            "trigger": "PollInputEvents",
+            "annotation": "Register all input events",
+            "contents": "PollInputEvents()"
+        },
+        {
+            "trigger": "WaitTime",
+            "annotation": "Wait for some time (halt program execution)",
+            "contents": "WaitTime(${1:seconds})"
+        },
+        {
+            "trigger": "SetRandomSeed",
+            "annotation": "Set the seed for the random number generator",
+            "contents": "SetRandomSeed(${1:seed})"
+        },
+        {
+            "trigger": "GetRandomValue",
+            "annotation": "Get a random value between min and max (both included)",
+            "contents": "GetRandomValue(${1:min}, ${2:max})"
+        },
+        {
+            "trigger": "LoadRandomSequence",
+            "annotation": "Load random values sequence, no values repeated",
+            "contents": "LoadRandomSequence(${1:count}, ${2:min}, ${3:max})"
+        },
+        {
+            "trigger": "UnloadRandomSequence",
+            "annotation": "Unload random values sequence",
+            "contents": "UnloadRandomSequence(${1:*sequence})"
+        },
+        {
+            "trigger": "TakeScreenshot",
+            "annotation": "Takes a screenshot of current screen (filename extension defines format)",
+            "contents": "TakeScreenshot(${1:*fileName})"
+        },
+        {
+            "trigger": "SetConfigFlags",
+            "annotation": "Setup init configuration flags (view FLAGS)",
+            "contents": "SetConfigFlags(${1:flags})"
+        },
+        {
+            "trigger": "OpenURL",
+            "annotation": "Open URL with default system browser (if available)",
+            "contents": "OpenURL(${1:*url})"
+        },
+        {
+            "trigger": "SetTraceLogLevel",
+            "annotation": "Set the current threshold (minimum) log level",
+            "contents": "SetTraceLogLevel(${1:logLevel})"
+        },
+        {
+            "trigger": "MemAlloc",
+            "annotation": "Internal memory allocator",
+            "contents": "MemAlloc(${1:size})"
+        },
+        {
+            "trigger": "MemRealloc",
+            "annotation": "Internal memory reallocator",
+            "contents": "MemRealloc(${1:*ptr}, ${2:size})"
+        },
+        {
+            "trigger": "MemFree",
+            "annotation": "Internal memory free",
+            "contents": "MemFree(${1:*ptr})"
+        },
+        {
+            "trigger": "SetTraceLogCallback",
+            "annotation": "Set custom trace log",
+            "contents": "SetTraceLogCallback(${1:callback})"
+        },
+        {
+            "trigger": "SetLoadFileDataCallback",
+            "annotation": "Set custom file binary data loader",
+            "contents": "SetLoadFileDataCallback(${1:callback})"
+        },
+        {
+            "trigger": "SetSaveFileDataCallback",
+            "annotation": "Set custom file binary data saver",
+            "contents": "SetSaveFileDataCallback(${1:callback})"
+        },
+        {
+            "trigger": "SetLoadFileTextCallback",
+            "annotation": "Set custom file text data loader",
+            "contents": "SetLoadFileTextCallback(${1:callback})"
+        },
+        {
+            "trigger": "SetSaveFileTextCallback",
+            "annotation": "Set custom file text data saver",
+            "contents": "SetSaveFileTextCallback(${1:callback})"
+        },
+        {
+            "trigger": "LoadFileData",
+            "annotation": "Load file data as byte array (read)",
+            "contents": "LoadFileData(${1:*fileName}, ${2:*dataSize})"
+        },
+        {
+            "trigger": "UnloadFileData",
+            "annotation": "Unload file data allocated by LoadFileData()",
+            "contents": "UnloadFileData(${1:*data})"
+        },
+        {
+            "trigger": "SaveFileData",
+            "annotation": "Save data to file from byte array (write), returns true on success",
+            "contents": "SaveFileData(${1:*fileName}, ${2:*data}, ${3:dataSize})"
+        },
+        {
+            "trigger": "ExportDataAsCode",
+            "annotation": "Export data to code (.h), returns true on success",
+            "contents": "ExportDataAsCode(${1:*data}, ${2:dataSize}, ${3:*fileName})"
+        },
+        {
+            "trigger": "LoadFileText",
+            "annotation": "Load text data from file (read), returns a '\\0' terminated string",
+            "contents": "LoadFileText(${1:*fileName})"
+        },
+        {
+            "trigger": "UnloadFileText",
+            "annotation": "Unload file text data allocated by LoadFileText()",
+            "contents": "UnloadFileText(${1:*text})"
+        },
+        {
+            "trigger": "SaveFileText",
+            "annotation": "Save text data to file (write), string must be '\\0' terminated, returns true on success",
+            "contents": "SaveFileText(${1:*fileName}, ${2:*text})"
+        },
+        {
+            "trigger": "FileExists",
+            "annotation": "Check if file exists",
+            "contents": "FileExists(${1:*fileName})"
+        },
+        {
+            "trigger": "DirectoryExists",
+            "annotation": "Check if a directory path exists",
+            "contents": "DirectoryExists(${1:*dirPath})"
+        },
+        {
+            "trigger": "IsFileExtension",
+            "annotation": "Check file extension (including point: .png, .wav)",
+            "contents": "IsFileExtension(${1:*fileName}, ${2:*ext})"
+        },
+        {
+            "trigger": "GetFileLength",
+            "annotation": "Get file length in bytes (NOTE: GetFileSize() conflicts with windows.h)",
+            "contents": "GetFileLength(${1:*fileName})"
+        },
+        {
+            "trigger": "GetFileExtension",
+            "annotation": "Get pointer to extension for a filename string (includes dot: '.png')",
+            "contents": "GetFileExtension(${1:*fileName})"
+        },
+        {
+            "trigger": "GetFileName",
+            "annotation": "Get pointer to filename for a path string",
+            "contents": "GetFileName(${1:*filePath})"
+        },
+        {
+            "trigger": "GetFileNameWithoutExt",
+            "annotation": "Get filename string without extension (uses static string)",
+            "contents": "GetFileNameWithoutExt(${1:*filePath})"
+        },
+        {
+            "trigger": "GetDirectoryPath",
+            "annotation": "Get full path for a given fileName with path (uses static string)",
+            "contents": "GetDirectoryPath(${1:*filePath})"
+        },
+        {
+            "trigger": "GetPrevDirectoryPath",
+            "annotation": "Get previous directory path for a given path (uses static string)",
+            "contents": "GetPrevDirectoryPath(${1:*dirPath})"
+        },
+        {
+            "trigger": "GetWorkingDirectory",
+            "annotation": "Get current working directory (uses static string)",
+            "contents": "GetWorkingDirectory()"
+        },
+        {
+            "trigger": "GetApplicationDirectory",
+            "annotation": "Get the directory of the running application (uses static string)",
+            "contents": "GetApplicationDirectory()"
+        },
+        {
+            "trigger": "MakeDirectory",
+            "annotation": "Create directories (including full path requested), returns 0 on success",
+            "contents": "MakeDirectory(${1:*dirPath})"
+        },
+        {
+            "trigger": "ChangeDirectory",
+            "annotation": "Change working directory, return true on success",
+            "contents": "ChangeDirectory(${1:*dir})"
+        },
+        {
+            "trigger": "IsPathFile",
+            "annotation": "Check if a given path is a file or a directory",
+            "contents": "IsPathFile(${1:*path})"
+        },
+        {
+            "trigger": "IsFileNameValid",
+            "annotation": "Check if fileName is valid for the platform/OS",
+            "contents": "IsFileNameValid(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadDirectoryFiles",
+            "annotation": "Load directory filepaths",
+            "contents": "LoadDirectoryFiles(${1:*dirPath})"
+        },
+        {
+            "trigger": "LoadDirectoryFilesEx",
+            "annotation": "Load directory filepaths with extension filtering and recursive directory scan. Use 'DIR' in the filter string to include directories in the result",
+            "contents": "LoadDirectoryFilesEx(${1:*basePath}, ${2:*filter}, ${3:scanSubdirs})"
+        },
+        {
+            "trigger": "UnloadDirectoryFiles",
+            "annotation": "Unload filepaths",
+            "contents": "UnloadDirectoryFiles(${1:files})"
+        },
+        {
+            "trigger": "IsFileDropped",
+            "annotation": "Check if a file has been dropped into window",
+            "contents": "IsFileDropped()"
+        },
+        {
+            "trigger": "LoadDroppedFiles",
+            "annotation": "Load dropped filepaths",
+            "contents": "LoadDroppedFiles()"
+        },
+        {
+            "trigger": "UnloadDroppedFiles",
+            "annotation": "Unload dropped filepaths",
+            "contents": "UnloadDroppedFiles(${1:files})"
+        },
+        {
+            "trigger": "GetFileModTime",
+            "annotation": "Get file modification time (last write time)",
+            "contents": "GetFileModTime(${1:*fileName})"
+        },
+        {
+            "trigger": "CompressData",
+            "annotation": "Compress data (DEFLATE algorithm), memory must be MemFree()",
+            "contents": "CompressData(${1:*data}, ${2:dataSize}, ${3:*compDataSize})"
+        },
+        {
+            "trigger": "DecompressData",
+            "annotation": "Decompress data (DEFLATE algorithm), memory must be MemFree()",
+            "contents": "DecompressData(${1:*compData}, ${2:compDataSize}, ${3:*dataSize})"
+        },
+        {
+            "trigger": "EncodeDataBase64",
+            "annotation": "Encode data to Base64 string, memory must be MemFree()",
+            "contents": "EncodeDataBase64(${1:*data}, ${2:dataSize}, ${3:*outputSize})"
+        },
+        {
+            "trigger": "DecodeDataBase64",
+            "annotation": "Decode Base64 string data, memory must be MemFree()",
+            "contents": "DecodeDataBase64(${1:*data}, ${2:*outputSize})"
+        },
+        {
+            "trigger": "ComputeCRC32",
+            "annotation": "Compute CRC32 hash code",
+            "contents": "ComputeCRC32(${1:*data}, ${2:dataSize})"
+        },
+        {
+            "trigger": "ComputeMD5",
+            "annotation": "Compute MD5 hash code, returns static int[4] (16 bytes)",
+            "contents": "ComputeMD5(${1:*data}, ${2:dataSize})"
+        },
+        {
+            "trigger": "ComputeSHA1",
+            "annotation": "Compute SHA1 hash code, returns static int[5] (20 bytes)",
+            "contents": "ComputeSHA1(${1:*data}, ${2:dataSize})"
+        },
+        {
+            "trigger": "LoadAutomationEventList",
+            "annotation": "Load automation events list from file, NULL for empty list, capacity = MAX_AUTOMATION_EVENTS",
+            "contents": "LoadAutomationEventList(${1:*fileName})"
+        },
+        {
+            "trigger": "UnloadAutomationEventList",
+            "annotation": "Unload automation events list from file",
+            "contents": "UnloadAutomationEventList(${1:list})"
+        },
+        {
+            "trigger": "ExportAutomationEventList",
+            "annotation": "Export automation events list as text file",
+            "contents": "ExportAutomationEventList(${1:list}, ${2:*fileName})"
+        },
+        {
+            "trigger": "SetAutomationEventList",
+            "annotation": "Set automation event list to record to",
+            "contents": "SetAutomationEventList(${1:*list})"
+        },
+        {
+            "trigger": "SetAutomationEventBaseFrame",
+            "annotation": "Set automation event internal base frame to start recording",
+            "contents": "SetAutomationEventBaseFrame(${1:frame})"
+        },
+        {
+            "trigger": "StartAutomationEventRecording",
+            "annotation": "Start recording automation events (AutomationEventList must be set)",
+            "contents": "StartAutomationEventRecording()"
+        },
+        {
+            "trigger": "StopAutomationEventRecording",
+            "annotation": "Stop recording automation events",
+            "contents": "StopAutomationEventRecording()"
+        },
+        {
+            "trigger": "PlayAutomationEvent",
+            "annotation": "Play a recorded automation event",
+            "contents": "PlayAutomationEvent(${1:event})"
+        },
+        {
+            "trigger": "IsKeyPressed",
+            "annotation": "Check if a key has been pressed once",
+            "contents": "IsKeyPressed(${1:key})"
+        },
+        {
+            "trigger": "IsKeyPressedRepeat",
+            "annotation": "Check if a key has been pressed again",
+            "contents": "IsKeyPressedRepeat(${1:key})"
+        },
+        {
+            "trigger": "IsKeyDown",
+            "annotation": "Check if a key is being pressed",
+            "contents": "IsKeyDown(${1:key})"
+        },
+        {
+            "trigger": "IsKeyReleased",
+            "annotation": "Check if a key has been released once",
+            "contents": "IsKeyReleased(${1:key})"
+        },
+        {
+            "trigger": "IsKeyUp",
+            "annotation": "Check if a key is NOT being pressed",
+            "contents": "IsKeyUp(${1:key})"
+        },
+        {
+            "trigger": "GetKeyPressed",
+            "annotation": "Get key pressed (keycode), call it multiple times for keys queued, returns 0 when the queue is empty",
+            "contents": "GetKeyPressed()"
+        },
+        {
+            "trigger": "GetCharPressed",
+            "annotation": "Get char pressed (unicode), call it multiple times for chars queued, returns 0 when the queue is empty",
+            "contents": "GetCharPressed()"
+        },
+        {
+            "trigger": "SetExitKey",
+            "annotation": "Set a custom key to exit program (default is ESC)",
+            "contents": "SetExitKey(${1:key})"
+        },
+        {
+            "trigger": "IsGamepadAvailable",
+            "annotation": "Check if a gamepad is available",
+            "contents": "IsGamepadAvailable(${1:gamepad})"
+        },
+        {
+            "trigger": "GetGamepadName",
+            "annotation": "Get gamepad internal name id",
+            "contents": "GetGamepadName(${1:gamepad})"
+        },
+        {
+            "trigger": "IsGamepadButtonPressed",
+            "annotation": "Check if a gamepad button has been pressed once",
+            "contents": "IsGamepadButtonPressed(${1:gamepad}, ${2:button})"
+        },
+        {
+            "trigger": "IsGamepadButtonDown",
+            "annotation": "Check if a gamepad button is being pressed",
+            "contents": "IsGamepadButtonDown(${1:gamepad}, ${2:button})"
+        },
+        {
+            "trigger": "IsGamepadButtonReleased",
+            "annotation": "Check if a gamepad button has been released once",
+            "contents": "IsGamepadButtonReleased(${1:gamepad}, ${2:button})"
+        },
+        {
+            "trigger": "IsGamepadButtonUp",
+            "annotation": "Check if a gamepad button is NOT being pressed",
+            "contents": "IsGamepadButtonUp(${1:gamepad}, ${2:button})"
+        },
+        {
+            "trigger": "GetGamepadButtonPressed",
+            "annotation": "Get the last gamepad button pressed",
+            "contents": "GetGamepadButtonPressed()"
+        },
+        {
+            "trigger": "GetGamepadAxisCount",
+            "annotation": "Get gamepad axis count for a gamepad",
+            "contents": "GetGamepadAxisCount(${1:gamepad})"
+        },
+        {
+            "trigger": "GetGamepadAxisMovement",
+            "annotation": "Get axis movement value for a gamepad axis",
+            "contents": "GetGamepadAxisMovement(${1:gamepad}, ${2:axis})"
+        },
+        {
+            "trigger": "SetGamepadMappings",
+            "annotation": "Set internal gamepad mappings (SDL_GameControllerDB)",
+            "contents": "SetGamepadMappings(${1:*mappings})"
+        },
+        {
+            "trigger": "SetGamepadVibration",
+            "annotation": "Set gamepad vibration for both motors (duration in seconds)",
+            "contents": "SetGamepadVibration(${1:gamepad}, ${2:leftMotor}, ${3:rightMotor}, ${4:duration})"
+        },
+        {
+            "trigger": "IsMouseButtonPressed",
+            "annotation": "Check if a mouse button has been pressed once",
+            "contents": "IsMouseButtonPressed(${1:button})"
+        },
+        {
+            "trigger": "IsMouseButtonDown",
+            "annotation": "Check if a mouse button is being pressed",
+            "contents": "IsMouseButtonDown(${1:button})"
+        },
+        {
+            "trigger": "IsMouseButtonReleased",
+            "annotation": "Check if a mouse button has been released once",
+            "contents": "IsMouseButtonReleased(${1:button})"
+        },
+        {
+            "trigger": "IsMouseButtonUp",
+            "annotation": "Check if a mouse button is NOT being pressed",
+            "contents": "IsMouseButtonUp(${1:button})"
+        },
+        {
+            "trigger": "GetMouseX",
+            "annotation": "Get mouse position X",
+            "contents": "GetMouseX()"
+        },
+        {
+            "trigger": "GetMouseY",
+            "annotation": "Get mouse position Y",
+            "contents": "GetMouseY()"
+        },
+        {
+            "trigger": "GetMousePosition",
+            "annotation": "Get mouse position XY",
+            "contents": "GetMousePosition()"
+        },
+        {
+            "trigger": "GetMouseDelta",
+            "annotation": "Get mouse delta between frames",
+            "contents": "GetMouseDelta()"
+        },
+        {
+            "trigger": "SetMousePosition",
+            "annotation": "Set mouse position XY",
+            "contents": "SetMousePosition(${1:x}, ${2:y})"
+        },
+        {
+            "trigger": "SetMouseOffset",
+            "annotation": "Set mouse offset",
+            "contents": "SetMouseOffset(${1:offsetX}, ${2:offsetY})"
+        },
+        {
+            "trigger": "SetMouseScale",
+            "annotation": "Set mouse scaling",
+            "contents": "SetMouseScale(${1:scaleX}, ${2:scaleY})"
+        },
+        {
+            "trigger": "GetMouseWheelMove",
+            "annotation": "Get mouse wheel movement for X or Y, whichever is larger",
+            "contents": "GetMouseWheelMove()"
+        },
+        {
+            "trigger": "GetMouseWheelMoveV",
+            "annotation": "Get mouse wheel movement for both X and Y",
+            "contents": "GetMouseWheelMoveV()"
+        },
+        {
+            "trigger": "SetMouseCursor",
+            "annotation": "Set mouse cursor",
+            "contents": "SetMouseCursor(${1:cursor})"
+        },
+        {
+            "trigger": "GetTouchX",
+            "annotation": "Get touch position X for touch point 0 (relative to screen size)",
+            "contents": "GetTouchX()"
+        },
+        {
+            "trigger": "GetTouchY",
+            "annotation": "Get touch position Y for touch point 0 (relative to screen size)",
+            "contents": "GetTouchY()"
+        },
+        {
+            "trigger": "GetTouchPosition",
+            "annotation": "Get touch position XY for a touch point index (relative to screen size)",
+            "contents": "GetTouchPosition(${1:index})"
+        },
+        {
+            "trigger": "GetTouchPointId",
+            "annotation": "Get touch point identifier for given index",
+            "contents": "GetTouchPointId(${1:index})"
+        },
+        {
+            "trigger": "GetTouchPointCount",
+            "annotation": "Get number of touch points",
+            "contents": "GetTouchPointCount()"
+        },
+        {
+            "trigger": "SetGesturesEnabled",
+            "annotation": "Enable a set of gestures using flags",
+            "contents": "SetGesturesEnabled(${1:flags})"
+        },
+        {
+            "trigger": "IsGestureDetected",
+            "annotation": "Check if a gesture have been detected",
+            "contents": "IsGestureDetected(${1:gesture})"
+        },
+        {
+            "trigger": "GetGestureDetected",
+            "annotation": "Get latest detected gesture",
+            "contents": "GetGestureDetected()"
+        },
+        {
+            "trigger": "GetGestureHoldDuration",
+            "annotation": "Get gesture hold time in seconds",
+            "contents": "GetGestureHoldDuration()"
+        },
+        {
+            "trigger": "GetGestureDragVector",
+            "annotation": "Get gesture drag vector",
+            "contents": "GetGestureDragVector()"
+        },
+        {
+            "trigger": "GetGestureDragAngle",
+            "annotation": "Get gesture drag angle",
+            "contents": "GetGestureDragAngle()"
+        },
+        {
+            "trigger": "GetGesturePinchVector",
+            "annotation": "Get gesture pinch delta",
+            "contents": "GetGesturePinchVector()"
+        },
+        {
+            "trigger": "GetGesturePinchAngle",
+            "annotation": "Get gesture pinch angle",
+            "contents": "GetGesturePinchAngle()"
+        },
+        {
+            "trigger": "UpdateCamera",
+            "annotation": "Update camera position for selected mode",
+            "contents": "UpdateCamera(${1:*camera}, ${2:mode})"
+        },
+        {
+            "trigger": "UpdateCameraPro",
+            "annotation": "Update camera movement/rotation",
+            "contents": "UpdateCameraPro(${1:*camera}, ${2:movement}, ${3:rotation}, ${4:zoom})"
+        },
+        {
+            "trigger": "SetShapesTexture",
+            "annotation": "Set texture and rectangle to be used on shapes drawing",
+            "contents": "SetShapesTexture(${1:texture}, ${2:source})"
+        },
+        {
+            "trigger": "GetShapesTexture",
+            "annotation": "Get texture that is used for shapes drawing",
+            "contents": "GetShapesTexture()"
+        },
+        {
+            "trigger": "GetShapesTextureRectangle",
+            "annotation": "Get texture source rectangle that is used for shapes drawing",
+            "contents": "GetShapesTextureRectangle()"
+        },
+        {
+            "trigger": "DrawPixel",
+            "annotation": "Draw a pixel using geometry [Can be slow, use with care]",
+            "contents": "DrawPixel(${1:posX}, ${2:posY}, ${3:color})"
+        },
+        {
+            "trigger": "DrawPixelV",
+            "annotation": "Draw a pixel using geometry (Vector version) [Can be slow, use with care]",
+            "contents": "DrawPixelV(${1:position}, ${2:color})"
+        },
+        {
+            "trigger": "DrawLine",
+            "annotation": "Draw a line",
+            "contents": "DrawLine(${1:startPosX}, ${2:startPosY}, ${3:endPosX}, ${4:endPosY}, ${5:color})"
+        },
+        {
+            "trigger": "DrawLineV",
+            "annotation": "Draw a line (using gl lines)",
+            "contents": "DrawLineV(${1:startPos}, ${2:endPos}, ${3:color})"
+        },
+        {
+            "trigger": "DrawLineEx",
+            "annotation": "Draw a line (using triangles/quads)",
+            "contents": "DrawLineEx(${1:startPos}, ${2:endPos}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawLineStrip",
+            "annotation": "Draw lines sequence (using gl lines)",
+            "contents": "DrawLineStrip(${1:*points}, ${2:pointCount}, ${3:color})"
+        },
+        {
+            "trigger": "DrawLineBezier",
+            "annotation": "Draw line segment cubic-bezier in-out interpolation",
+            "contents": "DrawLineBezier(${1:startPos}, ${2:endPos}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawCircle",
+            "annotation": "Draw a color-filled circle",
+            "contents": "DrawCircle(${1:centerX}, ${2:centerY}, ${3:radius}, ${4:color})"
+        },
+        {
+            "trigger": "DrawCircleSector",
+            "annotation": "Draw a piece of a circle",
+            "contents": "DrawCircleSector(${1:center}, ${2:radius}, ${3:startAngle}, ${4:endAngle}, ${5:segments}, ${6:color})"
+        },
+        {
+            "trigger": "DrawCircleSectorLines",
+            "annotation": "Draw circle sector outline",
+            "contents": "DrawCircleSectorLines(${1:center}, ${2:radius}, ${3:startAngle}, ${4:endAngle}, ${5:segments}, ${6:color})"
+        },
+        {
+            "trigger": "DrawCircleGradient",
+            "annotation": "Draw a gradient-filled circle",
+            "contents": "DrawCircleGradient(${1:centerX}, ${2:centerY}, ${3:radius}, ${4:inner}, ${5:outer})"
+        },
+        {
+            "trigger": "DrawCircleV",
+            "annotation": "Draw a color-filled circle (Vector version)",
+            "contents": "DrawCircleV(${1:center}, ${2:radius}, ${3:color})"
+        },
+        {
+            "trigger": "DrawCircleLines",
+            "annotation": "Draw circle outline",
+            "contents": "DrawCircleLines(${1:centerX}, ${2:centerY}, ${3:radius}, ${4:color})"
+        },
+        {
+            "trigger": "DrawCircleLinesV",
+            "annotation": "Draw circle outline (Vector version)",
+            "contents": "DrawCircleLinesV(${1:center}, ${2:radius}, ${3:color})"
+        },
+        {
+            "trigger": "DrawEllipse",
+            "annotation": "Draw ellipse",
+            "contents": "DrawEllipse(${1:centerX}, ${2:centerY}, ${3:radiusH}, ${4:radiusV}, ${5:color})"
+        },
+        {
+            "trigger": "DrawEllipseLines",
+            "annotation": "Draw ellipse outline",
+            "contents": "DrawEllipseLines(${1:centerX}, ${2:centerY}, ${3:radiusH}, ${4:radiusV}, ${5:color})"
+        },
+        {
+            "trigger": "DrawRing",
+            "annotation": "Draw ring",
+            "contents": "DrawRing(${1:center}, ${2:innerRadius}, ${3:outerRadius}, ${4:startAngle}, ${5:endAngle}, ${6:segments}, ${7:color})"
+        },
+        {
+            "trigger": "DrawRingLines",
+            "annotation": "Draw ring outline",
+            "contents": "DrawRingLines(${1:center}, ${2:innerRadius}, ${3:outerRadius}, ${4:startAngle}, ${5:endAngle}, ${6:segments}, ${7:color})"
+        },
+        {
+            "trigger": "DrawRectangle",
+            "annotation": "Draw a color-filled rectangle",
+            "contents": "DrawRectangle(${1:posX}, ${2:posY}, ${3:width}, ${4:height}, ${5:color})"
+        },
+        {
+            "trigger": "DrawRectangleV",
+            "annotation": "Draw a color-filled rectangle (Vector version)",
+            "contents": "DrawRectangleV(${1:position}, ${2:size}, ${3:color})"
+        },
+        {
+            "trigger": "DrawRectangleRec",
+            "annotation": "Draw a color-filled rectangle",
+            "contents": "DrawRectangleRec(${1:rec}, ${2:color})"
+        },
+        {
+            "trigger": "DrawRectanglePro",
+            "annotation": "Draw a color-filled rectangle with pro parameters",
+            "contents": "DrawRectanglePro(${1:rec}, ${2:origin}, ${3:rotation}, ${4:color})"
+        },
+        {
+            "trigger": "DrawRectangleGradientV",
+            "annotation": "Draw a vertical-gradient-filled rectangle",
+            "contents": "DrawRectangleGradientV(${1:posX}, ${2:posY}, ${3:width}, ${4:height}, ${5:top}, ${6:bottom})"
+        },
+        {
+            "trigger": "DrawRectangleGradientH",
+            "annotation": "Draw a horizontal-gradient-filled rectangle",
+            "contents": "DrawRectangleGradientH(${1:posX}, ${2:posY}, ${3:width}, ${4:height}, ${5:left}, ${6:right})"
+        },
+        {
+            "trigger": "DrawRectangleGradientEx",
+            "annotation": "Draw a gradient-filled rectangle with custom vertex colors",
+            "contents": "DrawRectangleGradientEx(${1:rec}, ${2:topLeft}, ${3:bottomLeft}, ${4:topRight}, ${5:bottomRight})"
+        },
+        {
+            "trigger": "DrawRectangleLines",
+            "annotation": "Draw rectangle outline",
+            "contents": "DrawRectangleLines(${1:posX}, ${2:posY}, ${3:width}, ${4:height}, ${5:color})"
+        },
+        {
+            "trigger": "DrawRectangleLinesEx",
+            "annotation": "Draw rectangle outline with extended parameters",
+            "contents": "DrawRectangleLinesEx(${1:rec}, ${2:lineThick}, ${3:color})"
+        },
+        {
+            "trigger": "DrawRectangleRounded",
+            "annotation": "Draw rectangle with rounded edges",
+            "contents": "DrawRectangleRounded(${1:rec}, ${2:roundness}, ${3:segments}, ${4:color})"
+        },
+        {
+            "trigger": "DrawRectangleRoundedLines",
+            "annotation": "Draw rectangle lines with rounded edges",
+            "contents": "DrawRectangleRoundedLines(${1:rec}, ${2:roundness}, ${3:segments}, ${4:color})"
+        },
+        {
+            "trigger": "DrawRectangleRoundedLinesEx",
+            "annotation": "Draw rectangle with rounded edges outline",
+            "contents": "DrawRectangleRoundedLinesEx(${1:rec}, ${2:roundness}, ${3:segments}, ${4:lineThick}, ${5:color})"
+        },
+        {
+            "trigger": "DrawTriangle",
+            "annotation": "Draw a color-filled triangle (vertex in counter-clockwise order!)",
+            "contents": "DrawTriangle(${1:v1}, ${2:v2}, ${3:v3}, ${4:color})"
+        },
+        {
+            "trigger": "DrawTriangleLines",
+            "annotation": "Draw triangle outline (vertex in counter-clockwise order!)",
+            "contents": "DrawTriangleLines(${1:v1}, ${2:v2}, ${3:v3}, ${4:color})"
+        },
+        {
+            "trigger": "DrawTriangleFan",
+            "annotation": "Draw a triangle fan defined by points (first vertex is the center)",
+            "contents": "DrawTriangleFan(${1:*points}, ${2:pointCount}, ${3:color})"
+        },
+        {
+            "trigger": "DrawTriangleStrip",
+            "annotation": "Draw a triangle strip defined by points",
+            "contents": "DrawTriangleStrip(${1:*points}, ${2:pointCount}, ${3:color})"
+        },
+        {
+            "trigger": "DrawPoly",
+            "annotation": "Draw a regular polygon (Vector version)",
+            "contents": "DrawPoly(${1:center}, ${2:sides}, ${3:radius}, ${4:rotation}, ${5:color})"
+        },
+        {
+            "trigger": "DrawPolyLines",
+            "annotation": "Draw a polygon outline of n sides",
+            "contents": "DrawPolyLines(${1:center}, ${2:sides}, ${3:radius}, ${4:rotation}, ${5:color})"
+        },
+        {
+            "trigger": "DrawPolyLinesEx",
+            "annotation": "Draw a polygon outline of n sides with extended parameters",
+            "contents": "DrawPolyLinesEx(${1:center}, ${2:sides}, ${3:radius}, ${4:rotation}, ${5:lineThick}, ${6:color})"
+        },
+        {
+            "trigger": "DrawSplineLinear",
+            "annotation": "Draw spline: Linear, minimum 2 points",
+            "contents": "DrawSplineLinear(${1:*points}, ${2:pointCount}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawSplineBasis",
+            "annotation": "Draw spline: B-Spline, minimum 4 points",
+            "contents": "DrawSplineBasis(${1:*points}, ${2:pointCount}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawSplineCatmullRom",
+            "annotation": "Draw spline: Catmull-Rom, minimum 4 points",
+            "contents": "DrawSplineCatmullRom(${1:*points}, ${2:pointCount}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawSplineBezierQuadratic",
+            "annotation": "Draw spline: Quadratic Bezier, minimum 3 points (1 control point): [p1, c2, p3, c4...]",
+            "contents": "DrawSplineBezierQuadratic(${1:*points}, ${2:pointCount}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawSplineBezierCubic",
+            "annotation": "Draw spline: Cubic Bezier, minimum 4 points (2 control points): [p1, c2, c3, p4, c5, c6...]",
+            "contents": "DrawSplineBezierCubic(${1:*points}, ${2:pointCount}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawSplineSegmentLinear",
+            "annotation": "Draw spline segment: Linear, 2 points",
+            "contents": "DrawSplineSegmentLinear(${1:p1}, ${2:p2}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "DrawSplineSegmentBasis",
+            "annotation": "Draw spline segment: B-Spline, 4 points",
+            "contents": "DrawSplineSegmentBasis(${1:p1}, ${2:p2}, ${3:p3}, ${4:p4}, ${5:thick}, ${6:color})"
+        },
+        {
+            "trigger": "DrawSplineSegmentCatmullRom",
+            "annotation": "Draw spline segment: Catmull-Rom, 4 points",
+            "contents": "DrawSplineSegmentCatmullRom(${1:p1}, ${2:p2}, ${3:p3}, ${4:p4}, ${5:thick}, ${6:color})"
+        },
+        {
+            "trigger": "DrawSplineSegmentBezierQuadratic",
+            "annotation": "Draw spline segment: Quadratic Bezier, 2 points, 1 control point",
+            "contents": "DrawSplineSegmentBezierQuadratic(${1:p1}, ${2:c2}, ${3:p3}, ${4:thick}, ${5:color})"
+        },
+        {
+            "trigger": "DrawSplineSegmentBezierCubic",
+            "annotation": "Draw spline segment: Cubic Bezier, 2 points, 2 control points",
+            "contents": "DrawSplineSegmentBezierCubic(${1:p1}, ${2:c2}, ${3:c3}, ${4:p4}, ${5:thick}, ${6:color})"
+        },
+        {
+            "trigger": "GetSplinePointLinear",
+            "annotation": "Get (evaluate) spline point: Linear",
+            "contents": "GetSplinePointLinear(${1:startPos}, ${2:endPos}, ${3:t})"
+        },
+        {
+            "trigger": "GetSplinePointBasis",
+            "annotation": "Get (evaluate) spline point: B-Spline",
+            "contents": "GetSplinePointBasis(${1:p1}, ${2:p2}, ${3:p3}, ${4:p4}, ${5:t})"
+        },
+        {
+            "trigger": "GetSplinePointCatmullRom",
+            "annotation": "Get (evaluate) spline point: Catmull-Rom",
+            "contents": "GetSplinePointCatmullRom(${1:p1}, ${2:p2}, ${3:p3}, ${4:p4}, ${5:t})"
+        },
+        {
+            "trigger": "GetSplinePointBezierQuad",
+            "annotation": "Get (evaluate) spline point: Quadratic Bezier",
+            "contents": "GetSplinePointBezierQuad(${1:p1}, ${2:c2}, ${3:p3}, ${4:t})"
+        },
+        {
+            "trigger": "GetSplinePointBezierCubic",
+            "annotation": "Get (evaluate) spline point: Cubic Bezier",
+            "contents": "GetSplinePointBezierCubic(${1:p1}, ${2:c2}, ${3:c3}, ${4:p4}, ${5:t})"
+        },
+        {
+            "trigger": "CheckCollisionRecs",
+            "annotation": "Check collision between two rectangles",
+            "contents": "CheckCollisionRecs(${1:rec1}, ${2:rec2})"
+        },
+        {
+            "trigger": "CheckCollisionCircles",
+            "annotation": "Check collision between two circles",
+            "contents": "CheckCollisionCircles(${1:center1}, ${2:radius1}, ${3:center2}, ${4:radius2})"
+        },
+        {
+            "trigger": "CheckCollisionCircleRec",
+            "annotation": "Check collision between circle and rectangle",
+            "contents": "CheckCollisionCircleRec(${1:center}, ${2:radius}, ${3:rec})"
+        },
+        {
+            "trigger": "CheckCollisionCircleLine",
+            "annotation": "Check if circle collides with a line created betweeen two points [p1] and [p2]",
+            "contents": "CheckCollisionCircleLine(${1:center}, ${2:radius}, ${3:p1}, ${4:p2})"
+        },
+        {
+            "trigger": "CheckCollisionPointRec",
+            "annotation": "Check if point is inside rectangle",
+            "contents": "CheckCollisionPointRec(${1:point}, ${2:rec})"
+        },
+        {
+            "trigger": "CheckCollisionPointCircle",
+            "annotation": "Check if point is inside circle",
+            "contents": "CheckCollisionPointCircle(${1:point}, ${2:center}, ${3:radius})"
+        },
+        {
+            "trigger": "CheckCollisionPointTriangle",
+            "annotation": "Check if point is inside a triangle",
+            "contents": "CheckCollisionPointTriangle(${1:point}, ${2:p1}, ${3:p2}, ${4:p3})"
+        },
+        {
+            "trigger": "CheckCollisionPointLine",
+            "annotation": "Check if point belongs to line created between two points [p1] and [p2] with defined margin in pixels [threshold]",
+            "contents": "CheckCollisionPointLine(${1:point}, ${2:p1}, ${3:p2}, ${4:threshold})"
+        },
+        {
+            "trigger": "CheckCollisionPointPoly",
+            "annotation": "Check if point is within a polygon described by array of vertices",
+            "contents": "CheckCollisionPointPoly(${1:point}, ${2:*points}, ${3:pointCount})"
+        },
+        {
+            "trigger": "CheckCollisionLines",
+            "annotation": "Check the collision between two lines defined by two points each, returns collision point by reference",
+            "contents": "CheckCollisionLines(${1:startPos1}, ${2:endPos1}, ${3:startPos2}, ${4:endPos2}, ${5:*collisionPoint})"
+        },
+        {
+            "trigger": "GetCollisionRec",
+            "annotation": "Get collision rectangle for two rectangles collision",
+            "contents": "GetCollisionRec(${1:rec1}, ${2:rec2})"
+        },
+        {
+            "trigger": "LoadImage",
+            "annotation": "Load image from file into CPU memory (RAM)",
+            "contents": "LoadImage(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadImageRaw",
+            "annotation": "Load image from RAW file data",
+            "contents": "LoadImageRaw(${1:*fileName}, ${2:width}, ${3:height}, ${4:format}, ${5:headerSize})"
+        },
+        {
+            "trigger": "LoadImageAnim",
+            "annotation": "Load image sequence from file (frames appended to image.data)",
+            "contents": "LoadImageAnim(${1:*fileName}, ${2:*frames})"
+        },
+        {
+            "trigger": "LoadImageAnimFromMemory",
+            "annotation": "Load image sequence from memory buffer",
+            "contents": "LoadImageAnimFromMemory(${1:*fileType}, ${2:*fileData}, ${3:dataSize}, ${4:*frames})"
+        },
+        {
+            "trigger": "LoadImageFromMemory",
+            "annotation": "Load image from memory buffer, fileType refers to extension: i.e. '.png'",
+            "contents": "LoadImageFromMemory(${1:*fileType}, ${2:*fileData}, ${3:dataSize})"
+        },
+        {
+            "trigger": "LoadImageFromTexture",
+            "annotation": "Load image from GPU texture data",
+            "contents": "LoadImageFromTexture(${1:texture})"
+        },
+        {
+            "trigger": "LoadImageFromScreen",
+            "annotation": "Load image from screen buffer and (screenshot)",
+            "contents": "LoadImageFromScreen()"
+        },
+        {
+            "trigger": "IsImageValid",
+            "annotation": "Check if an image is valid (data and parameters)",
+            "contents": "IsImageValid(${1:image})"
+        },
+        {
+            "trigger": "UnloadImage",
+            "annotation": "Unload image from CPU memory (RAM)",
+            "contents": "UnloadImage(${1:image})"
+        },
+        {
+            "trigger": "ExportImage",
+            "annotation": "Export image data to file, returns true on success",
+            "contents": "ExportImage(${1:image}, ${2:*fileName})"
+        },
+        {
+            "trigger": "ExportImageToMemory",
+            "annotation": "Export image to memory buffer",
+            "contents": "ExportImageToMemory(${1:image}, ${2:*fileType}, ${3:*fileSize})"
+        },
+        {
+            "trigger": "ExportImageAsCode",
+            "annotation": "Export image as code file defining an array of bytes, returns true on success",
+            "contents": "ExportImageAsCode(${1:image}, ${2:*fileName})"
+        },
+        {
+            "trigger": "GenImageColor",
+            "annotation": "Generate image: plain color",
+            "contents": "GenImageColor(${1:width}, ${2:height}, ${3:color})"
+        },
+        {
+            "trigger": "GenImageGradientLinear",
+            "annotation": "Generate image: linear gradient, direction in degrees [0..360], 0=Vertical gradient",
+            "contents": "GenImageGradientLinear(${1:width}, ${2:height}, ${3:direction}, ${4:start}, ${5:end})"
+        },
+        {
+            "trigger": "GenImageGradientRadial",
+            "annotation": "Generate image: radial gradient",
+            "contents": "GenImageGradientRadial(${1:width}, ${2:height}, ${3:density}, ${4:inner}, ${5:outer})"
+        },
+        {
+            "trigger": "GenImageGradientSquare",
+            "annotation": "Generate image: square gradient",
+            "contents": "GenImageGradientSquare(${1:width}, ${2:height}, ${3:density}, ${4:inner}, ${5:outer})"
+        },
+        {
+            "trigger": "GenImageChecked",
+            "annotation": "Generate image: checked",
+            "contents": "GenImageChecked(${1:width}, ${2:height}, ${3:checksX}, ${4:checksY}, ${5:col1}, ${6:col2})"
+        },
+        {
+            "trigger": "GenImageWhiteNoise",
+            "annotation": "Generate image: white noise",
+            "contents": "GenImageWhiteNoise(${1:width}, ${2:height}, ${3:factor})"
+        },
+        {
+            "trigger": "GenImagePerlinNoise",
+            "annotation": "Generate image: perlin noise",
+            "contents": "GenImagePerlinNoise(${1:width}, ${2:height}, ${3:offsetX}, ${4:offsetY}, ${5:scale})"
+        },
+        {
+            "trigger": "GenImageCellular",
+            "annotation": "Generate image: cellular algorithm, bigger tileSize means bigger cells",
+            "contents": "GenImageCellular(${1:width}, ${2:height}, ${3:tileSize})"
+        },
+        {
+            "trigger": "GenImageText",
+            "annotation": "Generate image: grayscale image from text data",
+            "contents": "GenImageText(${1:width}, ${2:height}, ${3:*text})"
+        },
+        {
+            "trigger": "ImageCopy",
+            "annotation": "Create an image duplicate (useful for transformations)",
+            "contents": "ImageCopy(${1:image})"
+        },
+        {
+            "trigger": "ImageFromImage",
+            "annotation": "Create an image from another image piece",
+            "contents": "ImageFromImage(${1:image}, ${2:rec})"
+        },
+        {
+            "trigger": "ImageFromChannel",
+            "annotation": "Create an image from a selected channel of another image (GRAYSCALE)",
+            "contents": "ImageFromChannel(${1:image}, ${2:selectedChannel})"
+        },
+        {
+            "trigger": "ImageText",
+            "annotation": "Create an image from text (default font)",
+            "contents": "ImageText(${1:*text}, ${2:fontSize}, ${3:color})"
+        },
+        {
+            "trigger": "ImageTextEx",
+            "annotation": "Create an image from text (custom sprite font)",
+            "contents": "ImageTextEx(${1:font}, ${2:*text}, ${3:fontSize}, ${4:spacing}, ${5:tint})"
+        },
+        {
+            "trigger": "ImageFormat",
+            "annotation": "Convert image data to desired format",
+            "contents": "ImageFormat(${1:*image}, ${2:newFormat})"
+        },
+        {
+            "trigger": "ImageToPOT",
+            "annotation": "Convert image to POT (power-of-two)",
+            "contents": "ImageToPOT(${1:*image}, ${2:fill})"
+        },
+        {
+            "trigger": "ImageCrop",
+            "annotation": "Crop an image to a defined rectangle",
+            "contents": "ImageCrop(${1:*image}, ${2:crop})"
+        },
+        {
+            "trigger": "ImageAlphaCrop",
+            "annotation": "Crop image depending on alpha value",
+            "contents": "ImageAlphaCrop(${1:*image}, ${2:threshold})"
+        },
+        {
+            "trigger": "ImageAlphaClear",
+            "annotation": "Clear alpha channel to desired color",
+            "contents": "ImageAlphaClear(${1:*image}, ${2:color}, ${3:threshold})"
+        },
+        {
+            "trigger": "ImageAlphaMask",
+            "annotation": "Apply alpha mask to image",
+            "contents": "ImageAlphaMask(${1:*image}, ${2:alphaMask})"
+        },
+        {
+            "trigger": "ImageAlphaPremultiply",
+            "annotation": "Premultiply alpha channel",
+            "contents": "ImageAlphaPremultiply(${1:*image})"
+        },
+        {
+            "trigger": "ImageBlurGaussian",
+            "annotation": "Apply Gaussian blur using a box blur approximation",
+            "contents": "ImageBlurGaussian(${1:*image}, ${2:blurSize})"
+        },
+        {
+            "trigger": "ImageKernelConvolution",
+            "annotation": "Apply custom square convolution kernel to image",
+            "contents": "ImageKernelConvolution(${1:*image}, ${2:*kernel}, ${3:kernelSize})"
+        },
+        {
+            "trigger": "ImageResize",
+            "annotation": "Resize image (Bicubic scaling algorithm)",
+            "contents": "ImageResize(${1:*image}, ${2:newWidth}, ${3:newHeight})"
+        },
+        {
+            "trigger": "ImageResizeNN",
+            "annotation": "Resize image (Nearest-Neighbor scaling algorithm)",
+            "contents": "ImageResizeNN(${1:*image}, ${2:newWidth}, ${3:newHeight})"
+        },
+        {
+            "trigger": "ImageResizeCanvas",
+            "annotation": "Resize canvas and fill with color",
+            "contents": "ImageResizeCanvas(${1:*image}, ${2:newWidth}, ${3:newHeight}, ${4:offsetX}, ${5:offsetY}, ${6:fill})"
+        },
+        {
+            "trigger": "ImageMipmaps",
+            "annotation": "Compute all mipmap levels for a provided image",
+            "contents": "ImageMipmaps(${1:*image})"
+        },
+        {
+            "trigger": "ImageDither",
+            "annotation": "Dither image data to 16bpp or lower (Floyd-Steinberg dithering)",
+            "contents": "ImageDither(${1:*image}, ${2:rBpp}, ${3:gBpp}, ${4:bBpp}, ${5:aBpp})"
+        },
+        {
+            "trigger": "ImageFlipVertical",
+            "annotation": "Flip image vertically",
+            "contents": "ImageFlipVertical(${1:*image})"
+        },
+        {
+            "trigger": "ImageFlipHorizontal",
+            "annotation": "Flip image horizontally",
+            "contents": "ImageFlipHorizontal(${1:*image})"
+        },
+        {
+            "trigger": "ImageRotate",
+            "annotation": "Rotate image by input angle in degrees (-359 to 359)",
+            "contents": "ImageRotate(${1:*image}, ${2:degrees})"
+        },
+        {
+            "trigger": "ImageRotateCW",
+            "annotation": "Rotate image clockwise 90deg",
+            "contents": "ImageRotateCW(${1:*image})"
+        },
+        {
+            "trigger": "ImageRotateCCW",
+            "annotation": "Rotate image counter-clockwise 90deg",
+            "contents": "ImageRotateCCW(${1:*image})"
+        },
+        {
+            "trigger": "ImageColorTint",
+            "annotation": "Modify image color: tint",
+            "contents": "ImageColorTint(${1:*image}, ${2:color})"
+        },
+        {
+            "trigger": "ImageColorInvert",
+            "annotation": "Modify image color: invert",
+            "contents": "ImageColorInvert(${1:*image})"
+        },
+        {
+            "trigger": "ImageColorGrayscale",
+            "annotation": "Modify image color: grayscale",
+            "contents": "ImageColorGrayscale(${1:*image})"
+        },
+        {
+            "trigger": "ImageColorContrast",
+            "annotation": "Modify image color: contrast (-100 to 100)",
+            "contents": "ImageColorContrast(${1:*image}, ${2:contrast})"
+        },
+        {
+            "trigger": "ImageColorBrightness",
+            "annotation": "Modify image color: brightness (-255 to 255)",
+            "contents": "ImageColorBrightness(${1:*image}, ${2:brightness})"
+        },
+        {
+            "trigger": "ImageColorReplace",
+            "annotation": "Modify image color: replace color",
+            "contents": "ImageColorReplace(${1:*image}, ${2:color}, ${3:replace})"
+        },
+        {
+            "trigger": "LoadImageColors",
+            "annotation": "Load color data from image as a Color array (RGBA - 32bit)",
+            "contents": "LoadImageColors(${1:image})"
+        },
+        {
+            "trigger": "LoadImagePalette",
+            "annotation": "Load colors palette from image as a Color array (RGBA - 32bit)",
+            "contents": "LoadImagePalette(${1:image}, ${2:maxPaletteSize}, ${3:*colorCount})"
+        },
+        {
+            "trigger": "UnloadImageColors",
+            "annotation": "Unload color data loaded with LoadImageColors()",
+            "contents": "UnloadImageColors(${1:*colors})"
+        },
+        {
+            "trigger": "UnloadImagePalette",
+            "annotation": "Unload colors palette loaded with LoadImagePalette()",
+            "contents": "UnloadImagePalette(${1:*colors})"
+        },
+        {
+            "trigger": "GetImageAlphaBorder",
+            "annotation": "Get image alpha border rectangle",
+            "contents": "GetImageAlphaBorder(${1:image}, ${2:threshold})"
+        },
+        {
+            "trigger": "GetImageColor",
+            "annotation": "Get image pixel color at (x, y) position",
+            "contents": "GetImageColor(${1:image}, ${2:x}, ${3:y})"
+        },
+        {
+            "trigger": "ImageClearBackground",
+            "annotation": "Clear image background with given color",
+            "contents": "ImageClearBackground(${1:*dst}, ${2:color})"
+        },
+        {
+            "trigger": "ImageDrawPixel",
+            "annotation": "Draw pixel within an image",
+            "contents": "ImageDrawPixel(${1:*dst}, ${2:posX}, ${3:posY}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDrawPixelV",
+            "annotation": "Draw pixel within an image (Vector version)",
+            "contents": "ImageDrawPixelV(${1:*dst}, ${2:position}, ${3:color})"
+        },
+        {
+            "trigger": "ImageDrawLine",
+            "annotation": "Draw line within an image",
+            "contents": "ImageDrawLine(${1:*dst}, ${2:startPosX}, ${3:startPosY}, ${4:endPosX}, ${5:endPosY}, ${6:color})"
+        },
+        {
+            "trigger": "ImageDrawLineV",
+            "annotation": "Draw line within an image (Vector version)",
+            "contents": "ImageDrawLineV(${1:*dst}, ${2:start}, ${3:end}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDrawLineEx",
+            "annotation": "Draw a line defining thickness within an image",
+            "contents": "ImageDrawLineEx(${1:*dst}, ${2:start}, ${3:end}, ${4:thick}, ${5:color})"
+        },
+        {
+            "trigger": "ImageDrawCircle",
+            "annotation": "Draw a filled circle within an image",
+            "contents": "ImageDrawCircle(${1:*dst}, ${2:centerX}, ${3:centerY}, ${4:radius}, ${5:color})"
+        },
+        {
+            "trigger": "ImageDrawCircleV",
+            "annotation": "Draw a filled circle within an image (Vector version)",
+            "contents": "ImageDrawCircleV(${1:*dst}, ${2:center}, ${3:radius}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDrawCircleLines",
+            "annotation": "Draw circle outline within an image",
+            "contents": "ImageDrawCircleLines(${1:*dst}, ${2:centerX}, ${3:centerY}, ${4:radius}, ${5:color})"
+        },
+        {
+            "trigger": "ImageDrawCircleLinesV",
+            "annotation": "Draw circle outline within an image (Vector version)",
+            "contents": "ImageDrawCircleLinesV(${1:*dst}, ${2:center}, ${3:radius}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDrawRectangle",
+            "annotation": "Draw rectangle within an image",
+            "contents": "ImageDrawRectangle(${1:*dst}, ${2:posX}, ${3:posY}, ${4:width}, ${5:height}, ${6:color})"
+        },
+        {
+            "trigger": "ImageDrawRectangleV",
+            "annotation": "Draw rectangle within an image (Vector version)",
+            "contents": "ImageDrawRectangleV(${1:*dst}, ${2:position}, ${3:size}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDrawRectangleRec",
+            "annotation": "Draw rectangle within an image",
+            "contents": "ImageDrawRectangleRec(${1:*dst}, ${2:rec}, ${3:color})"
+        },
+        {
+            "trigger": "ImageDrawRectangleLines",
+            "annotation": "Draw rectangle lines within an image",
+            "contents": "ImageDrawRectangleLines(${1:*dst}, ${2:rec}, ${3:thick}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDrawTriangle",
+            "annotation": "Draw triangle within an image",
+            "contents": "ImageDrawTriangle(${1:*dst}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:color})"
+        },
+        {
+            "trigger": "ImageDrawTriangleEx",
+            "annotation": "Draw triangle with interpolated colors within an image",
+            "contents": "ImageDrawTriangleEx(${1:*dst}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:c1}, ${6:c2}, ${7:c3})"
+        },
+        {
+            "trigger": "ImageDrawTriangleLines",
+            "annotation": "Draw triangle outline within an image",
+            "contents": "ImageDrawTriangleLines(${1:*dst}, ${2:v1}, ${3:v2}, ${4:v3}, ${5:color})"
+        },
+        {
+            "trigger": "ImageDrawTriangleFan",
+            "annotation": "Draw a triangle fan defined by points within an image (first vertex is the center)",
+            "contents": "ImageDrawTriangleFan(${1:*dst}, ${2:*points}, ${3:pointCount}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDrawTriangleStrip",
+            "annotation": "Draw a triangle strip defined by points within an image",
+            "contents": "ImageDrawTriangleStrip(${1:*dst}, ${2:*points}, ${3:pointCount}, ${4:color})"
+        },
+        {
+            "trigger": "ImageDraw",
+            "annotation": "Draw a source image within a destination image (tint applied to source)",
+            "contents": "ImageDraw(${1:*dst}, ${2:src}, ${3:srcRec}, ${4:dstRec}, ${5:tint})"
+        },
+        {
+            "trigger": "ImageDrawText",
+            "annotation": "Draw text (using default font) within an image (destination)",
+            "contents": "ImageDrawText(${1:*dst}, ${2:*text}, ${3:posX}, ${4:posY}, ${5:fontSize}, ${6:color})"
+        },
+        {
+            "trigger": "ImageDrawTextEx",
+            "annotation": "Draw text (custom sprite font) within an image (destination)",
+            "contents": "ImageDrawTextEx(${1:*dst}, ${2:font}, ${3:*text}, ${4:position}, ${5:fontSize}, ${6:spacing}, ${7:tint})"
+        },
+        {
+            "trigger": "LoadTexture",
+            "annotation": "Load texture from file into GPU memory (VRAM)",
+            "contents": "LoadTexture(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadTextureFromImage",
+            "annotation": "Load texture from image data",
+            "contents": "LoadTextureFromImage(${1:image})"
+        },
+        {
+            "trigger": "LoadTextureCubemap",
+            "annotation": "Load cubemap from image, multiple image cubemap layouts supported",
+            "contents": "LoadTextureCubemap(${1:image}, ${2:layout})"
+        },
+        {
+            "trigger": "LoadRenderTexture",
+            "annotation": "Load texture for rendering (framebuffer)",
+            "contents": "LoadRenderTexture(${1:width}, ${2:height})"
+        },
+        {
+            "trigger": "IsTextureValid",
+            "annotation": "Check if a texture is valid (loaded in GPU)",
+            "contents": "IsTextureValid(${1:texture})"
+        },
+        {
+            "trigger": "UnloadTexture",
+            "annotation": "Unload texture from GPU memory (VRAM)",
+            "contents": "UnloadTexture(${1:texture})"
+        },
+        {
+            "trigger": "IsRenderTextureValid",
+            "annotation": "Check if a render texture is valid (loaded in GPU)",
+            "contents": "IsRenderTextureValid(${1:target})"
+        },
+        {
+            "trigger": "UnloadRenderTexture",
+            "annotation": "Unload render texture from GPU memory (VRAM)",
+            "contents": "UnloadRenderTexture(${1:target})"
+        },
+        {
+            "trigger": "UpdateTexture",
+            "annotation": "Update GPU texture with new data",
+            "contents": "UpdateTexture(${1:texture}, ${2:*pixels})"
+        },
+        {
+            "trigger": "UpdateTextureRec",
+            "annotation": "Update GPU texture rectangle with new data",
+            "contents": "UpdateTextureRec(${1:texture}, ${2:rec}, ${3:*pixels})"
+        },
+        {
+            "trigger": "GenTextureMipmaps",
+            "annotation": "Generate GPU mipmaps for a texture",
+            "contents": "GenTextureMipmaps(${1:*texture})"
+        },
+        {
+            "trigger": "SetTextureFilter",
+            "annotation": "Set texture scaling filter mode",
+            "contents": "SetTextureFilter(${1:texture}, ${2:filter})"
+        },
+        {
+            "trigger": "SetTextureWrap",
+            "annotation": "Set texture wrapping mode",
+            "contents": "SetTextureWrap(${1:texture}, ${2:wrap})"
+        },
+        {
+            "trigger": "DrawTexture",
+            "annotation": "Draw a Texture2D",
+            "contents": "DrawTexture(${1:texture}, ${2:posX}, ${3:posY}, ${4:tint})"
+        },
+        {
+            "trigger": "DrawTextureV",
+            "annotation": "Draw a Texture2D with position defined as Vector2",
+            "contents": "DrawTextureV(${1:texture}, ${2:position}, ${3:tint})"
+        },
+        {
+            "trigger": "DrawTextureEx",
+            "annotation": "Draw a Texture2D with extended parameters",
+            "contents": "DrawTextureEx(${1:texture}, ${2:position}, ${3:rotation}, ${4:scale}, ${5:tint})"
+        },
+        {
+            "trigger": "DrawTextureRec",
+            "annotation": "Draw a part of a texture defined by a rectangle",
+            "contents": "DrawTextureRec(${1:texture}, ${2:source}, ${3:position}, ${4:tint})"
+        },
+        {
+            "trigger": "DrawTexturePro",
+            "annotation": "Draw a part of a texture defined by a rectangle with 'pro' parameters",
+            "contents": "DrawTexturePro(${1:texture}, ${2:source}, ${3:dest}, ${4:origin}, ${5:rotation}, ${6:tint})"
+        },
+        {
+            "trigger": "DrawTextureNPatch",
+            "annotation": "Draws a texture (or part of it) that stretches or shrinks nicely",
+            "contents": "DrawTextureNPatch(${1:texture}, ${2:nPatchInfo}, ${3:dest}, ${4:origin}, ${5:rotation}, ${6:tint})"
+        },
+        {
+            "trigger": "ColorIsEqual",
+            "annotation": "Check if two colors are equal",
+            "contents": "ColorIsEqual(${1:col1}, ${2:col2})"
+        },
+        {
+            "trigger": "Fade",
+            "annotation": "Get color with alpha applied, alpha goes from 0.0f to 1.0f",
+            "contents": "Fade(${1:color}, ${2:alpha})"
+        },
+        {
+            "trigger": "ColorToInt",
+            "annotation": "Get hexadecimal value for a Color (0xRRGGBBAA)",
+            "contents": "ColorToInt(${1:color})"
+        },
+        {
+            "trigger": "ColorNormalize",
+            "annotation": "Get Color normalized as float [0..1]",
+            "contents": "ColorNormalize(${1:color})"
+        },
+        {
+            "trigger": "ColorFromNormalized",
+            "annotation": "Get Color from normalized values [0..1]",
+            "contents": "ColorFromNormalized(${1:normalized})"
+        },
+        {
+            "trigger": "ColorToHSV",
+            "annotation": "Get HSV values for a Color, hue [0..360], saturation/value [0..1]",
+            "contents": "ColorToHSV(${1:color})"
+        },
+        {
+            "trigger": "ColorFromHSV",
+            "annotation": "Get a Color from HSV values, hue [0..360], saturation/value [0..1]",
+            "contents": "ColorFromHSV(${1:hue}, ${2:saturation}, ${3:value})"
+        },
+        {
+            "trigger": "ColorTint",
+            "annotation": "Get color multiplied with another color",
+            "contents": "ColorTint(${1:color}, ${2:tint})"
+        },
+        {
+            "trigger": "ColorBrightness",
+            "annotation": "Get color with brightness correction, brightness factor goes from -1.0f to 1.0f",
+            "contents": "ColorBrightness(${1:color}, ${2:factor})"
+        },
+        {
+            "trigger": "ColorContrast",
+            "annotation": "Get color with contrast correction, contrast values between -1.0f and 1.0f",
+            "contents": "ColorContrast(${1:color}, ${2:contrast})"
+        },
+        {
+            "trigger": "ColorAlpha",
+            "annotation": "Get color with alpha applied, alpha goes from 0.0f to 1.0f",
+            "contents": "ColorAlpha(${1:color}, ${2:alpha})"
+        },
+        {
+            "trigger": "ColorAlphaBlend",
+            "annotation": "Get src alpha-blended into dst color with tint",
+            "contents": "ColorAlphaBlend(${1:dst}, ${2:src}, ${3:tint})"
+        },
+        {
+            "trigger": "ColorLerp",
+            "annotation": "Get color lerp interpolation between two colors, factor [0.0f..1.0f]",
+            "contents": "ColorLerp(${1:color1}, ${2:color2}, ${3:factor})"
+        },
+        {
+            "trigger": "GetColor",
+            "annotation": "Get Color structure from hexadecimal value",
+            "contents": "GetColor(${1:hexValue})"
+        },
+        {
+            "trigger": "GetPixelColor",
+            "annotation": "Get Color from a source pixel pointer of certain format",
+            "contents": "GetPixelColor(${1:*srcPtr}, ${2:format})"
+        },
+        {
+            "trigger": "SetPixelColor",
+            "annotation": "Set color formatted into destination pixel pointer",
+            "contents": "SetPixelColor(${1:*dstPtr}, ${2:color}, ${3:format})"
+        },
+        {
+            "trigger": "GetPixelDataSize",
+            "annotation": "Get pixel data size in bytes for certain format",
+            "contents": "GetPixelDataSize(${1:width}, ${2:height}, ${3:format})"
+        },
+        {
+            "trigger": "GetFontDefault",
+            "annotation": "Get the default Font",
+            "contents": "GetFontDefault()"
+        },
+        {
+            "trigger": "LoadFont",
+            "annotation": "Load font from file into GPU memory (VRAM)",
+            "contents": "LoadFont(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadFontEx",
+            "annotation": "Load font from file with extended parameters, use NULL for codepoints and 0 for codepointCount to load the default character set, font size is provided in pixels height",
+            "contents": "LoadFontEx(${1:*fileName}, ${2:fontSize}, ${3:*codepoints}, ${4:codepointCount})"
+        },
+        {
+            "trigger": "LoadFontFromImage",
+            "annotation": "Load font from Image (XNA style)",
+            "contents": "LoadFontFromImage(${1:image}, ${2:key}, ${3:firstChar})"
+        },
+        {
+            "trigger": "LoadFontFromMemory",
+            "annotation": "Load font from memory buffer, fileType refers to extension: i.e. '.ttf'",
+            "contents": "LoadFontFromMemory(${1:*fileType}, ${2:*fileData}, ${3:dataSize}, ${4:fontSize}, ${5:*codepoints}, ${6:codepointCount})"
+        },
+        {
+            "trigger": "IsFontValid",
+            "annotation": "Check if a font is valid (font data loaded, WARNING: GPU texture not checked)",
+            "contents": "IsFontValid(${1:font})"
+        },
+        {
+            "trigger": "LoadFontData",
+            "annotation": "Load font data for further use",
+            "contents": "LoadFontData(${1:*fileData}, ${2:dataSize}, ${3:fontSize}, ${4:*codepoints}, ${5:codepointCount}, ${6:type})"
+        },
+        {
+            "trigger": "GenImageFontAtlas",
+            "annotation": "Generate image font atlas using chars info",
+            "contents": "GenImageFontAtlas(${1:*glyphs}, ${2:**glyphRecs}, ${3:glyphCount}, ${4:fontSize}, ${5:padding}, ${6:packMethod})"
+        },
+        {
+            "trigger": "UnloadFontData",
+            "annotation": "Unload font chars info data (RAM)",
+            "contents": "UnloadFontData(${1:*glyphs}, ${2:glyphCount})"
+        },
+        {
+            "trigger": "UnloadFont",
+            "annotation": "Unload font from GPU memory (VRAM)",
+            "contents": "UnloadFont(${1:font})"
+        },
+        {
+            "trigger": "ExportFontAsCode",
+            "annotation": "Export font as code file, returns true on success",
+            "contents": "ExportFontAsCode(${1:font}, ${2:*fileName})"
+        },
+        {
+            "trigger": "DrawFPS",
+            "annotation": "Draw current FPS",
+            "contents": "DrawFPS(${1:posX}, ${2:posY})"
+        },
+        {
+            "trigger": "DrawText",
+            "annotation": "Draw text (using default font)",
+            "contents": "DrawText(${1:*text}, ${2:posX}, ${3:posY}, ${4:fontSize}, ${5:color})"
+        },
+        {
+            "trigger": "DrawTextEx",
+            "annotation": "Draw text using font and additional parameters",
+            "contents": "DrawTextEx(${1:font}, ${2:*text}, ${3:position}, ${4:fontSize}, ${5:spacing}, ${6:tint})"
+        },
+        {
+            "trigger": "DrawTextPro",
+            "annotation": "Draw text using Font and pro parameters (rotation)",
+            "contents": "DrawTextPro(${1:font}, ${2:*text}, ${3:position}, ${4:origin}, ${5:rotation}, ${6:fontSize}, ${7:spacing}, ${8:tint})"
+        },
+        {
+            "trigger": "DrawTextCodepoint",
+            "annotation": "Draw one character (codepoint)",
+            "contents": "DrawTextCodepoint(${1:font}, ${2:codepoint}, ${3:position}, ${4:fontSize}, ${5:tint})"
+        },
+        {
+            "trigger": "DrawTextCodepoints",
+            "annotation": "Draw multiple character (codepoint)",
+            "contents": "DrawTextCodepoints(${1:font}, ${2:*codepoints}, ${3:codepointCount}, ${4:position}, ${5:fontSize}, ${6:spacing}, ${7:tint})"
+        },
+        {
+            "trigger": "SetTextLineSpacing",
+            "annotation": "Set vertical line spacing when drawing with line-breaks",
+            "contents": "SetTextLineSpacing(${1:spacing})"
+        },
+        {
+            "trigger": "MeasureText",
+            "annotation": "Measure string width for default font",
+            "contents": "MeasureText(${1:*text}, ${2:fontSize})"
+        },
+        {
+            "trigger": "MeasureTextEx",
+            "annotation": "Measure string size for Font",
+            "contents": "MeasureTextEx(${1:font}, ${2:*text}, ${3:fontSize}, ${4:spacing})"
+        },
+        {
+            "trigger": "GetGlyphIndex",
+            "annotation": "Get glyph index position in font for a codepoint (unicode character), fallback to '?' if not found",
+            "contents": "GetGlyphIndex(${1:font}, ${2:codepoint})"
+        },
+        {
+            "trigger": "GetGlyphInfo",
+            "annotation": "Get glyph font info data for a codepoint (unicode character), fallback to '?' if not found",
+            "contents": "GetGlyphInfo(${1:font}, ${2:codepoint})"
+        },
+        {
+            "trigger": "GetGlyphAtlasRec",
+            "annotation": "Get glyph rectangle in font atlas for a codepoint (unicode character), fallback to '?' if not found",
+            "contents": "GetGlyphAtlasRec(${1:font}, ${2:codepoint})"
+        },
+        {
+            "trigger": "LoadUTF8",
+            "annotation": "Load UTF-8 text encoded from codepoints array",
+            "contents": "LoadUTF8(${1:*codepoints}, ${2:length})"
+        },
+        {
+            "trigger": "UnloadUTF8",
+            "annotation": "Unload UTF-8 text encoded from codepoints array",
+            "contents": "UnloadUTF8(${1:*text})"
+        },
+        {
+            "trigger": "LoadCodepoints",
+            "annotation": "Load all codepoints from a UTF-8 text string, codepoints count returned by parameter",
+            "contents": "LoadCodepoints(${1:*text}, ${2:*count})"
+        },
+        {
+            "trigger": "UnloadCodepoints",
+            "annotation": "Unload codepoints data from memory",
+            "contents": "UnloadCodepoints(${1:*codepoints})"
+        },
+        {
+            "trigger": "GetCodepointCount",
+            "annotation": "Get total number of codepoints in a UTF-8 encoded string",
+            "contents": "GetCodepointCount(${1:*text})"
+        },
+        {
+            "trigger": "GetCodepoint",
+            "annotation": "Get next codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure",
+            "contents": "GetCodepoint(${1:*text}, ${2:*codepointSize})"
+        },
+        {
+            "trigger": "GetCodepointNext",
+            "annotation": "Get next codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure",
+            "contents": "GetCodepointNext(${1:*text}, ${2:*codepointSize})"
+        },
+        {
+            "trigger": "GetCodepointPrevious",
+            "annotation": "Get previous codepoint in a UTF-8 encoded string, 0x3f('?') is returned on failure",
+            "contents": "GetCodepointPrevious(${1:*text}, ${2:*codepointSize})"
+        },
+        {
+            "trigger": "CodepointToUTF8",
+            "annotation": "Encode one codepoint into UTF-8 byte array (array length returned as parameter)",
+            "contents": "CodepointToUTF8(${1:codepoint}, ${2:*utf8Size})"
+        },
+        {
+            "trigger": "TextCopy",
+            "annotation": "Copy one string to another, returns bytes copied",
+            "contents": "TextCopy(${1:*dst}, ${2:*src})"
+        },
+        {
+            "trigger": "TextIsEqual",
+            "annotation": "Check if two text string are equal",
+            "contents": "TextIsEqual(${1:*text1}, ${2:*text2})"
+        },
+        {
+            "trigger": "TextLength",
+            "annotation": "Get text length, checks for '\\0' ending",
+            "contents": "TextLength(${1:*text})"
+        },
+        {
+            "trigger": "TextSubtext",
+            "annotation": "Get a piece of a text string",
+            "contents": "TextSubtext(${1:*text}, ${2:position}, ${3:length})"
+        },
+        {
+            "trigger": "TextReplace",
+            "annotation": "Replace text string (WARNING: memory must be freed!)",
+            "contents": "TextReplace(${1:*text}, ${2:*replace}, ${3:*by})"
+        },
+        {
+            "trigger": "TextInsert",
+            "annotation": "Insert text in a position (WARNING: memory must be freed!)",
+            "contents": "TextInsert(${1:*text}, ${2:*insert}, ${3:position})"
+        },
+        {
+            "trigger": "TextJoin",
+            "annotation": "Join text strings with delimiter",
+            "contents": "TextJoin(${1:**textList}, ${2:count}, ${3:*delimiter})"
+        },
+        {
+            "trigger": "TextSplit",
+            "annotation": "Split text into multiple strings",
+            "contents": "TextSplit(${1:*text}, ${2:delimiter}, ${3:*count})"
+        },
+        {
+            "trigger": "TextAppend",
+            "annotation": "Append text at specific position and move cursor!",
+            "contents": "TextAppend(${1:*text}, ${2:*append}, ${3:*position})"
+        },
+        {
+            "trigger": "TextFindIndex",
+            "annotation": "Find first text occurrence within a string",
+            "contents": "TextFindIndex(${1:*text}, ${2:*find})"
+        },
+        {
+            "trigger": "TextToUpper",
+            "annotation": "Get upper case version of provided string",
+            "contents": "TextToUpper(${1:*text})"
+        },
+        {
+            "trigger": "TextToLower",
+            "annotation": "Get lower case version of provided string",
+            "contents": "TextToLower(${1:*text})"
+        },
+        {
+            "trigger": "TextToPascal",
+            "annotation": "Get Pascal case notation version of provided string",
+            "contents": "TextToPascal(${1:*text})"
+        },
+        {
+            "trigger": "TextToSnake",
+            "annotation": "Get Snake case notation version of provided string",
+            "contents": "TextToSnake(${1:*text})"
+        },
+        {
+            "trigger": "TextToCamel",
+            "annotation": "Get Camel case notation version of provided string",
+            "contents": "TextToCamel(${1:*text})"
+        },
+        {
+            "trigger": "TextToInteger",
+            "annotation": "Get integer value from text (negative values not supported)",
+            "contents": "TextToInteger(${1:*text})"
+        },
+        {
+            "trigger": "TextToFloat",
+            "annotation": "Get float value from text (negative values not supported)",
+            "contents": "TextToFloat(${1:*text})"
+        },
+        {
+            "trigger": "DrawLine3D",
+            "annotation": "Draw a line in 3D world space",
+            "contents": "DrawLine3D(${1:startPos}, ${2:endPos}, ${3:color})"
+        },
+        {
+            "trigger": "DrawPoint3D",
+            "annotation": "Draw a point in 3D space, actually a small line",
+            "contents": "DrawPoint3D(${1:position}, ${2:color})"
+        },
+        {
+            "trigger": "DrawCircle3D",
+            "annotation": "Draw a circle in 3D world space",
+            "contents": "DrawCircle3D(${1:center}, ${2:radius}, ${3:rotationAxis}, ${4:rotationAngle}, ${5:color})"
+        },
+        {
+            "trigger": "DrawTriangle3D",
+            "annotation": "Draw a color-filled triangle (vertex in counter-clockwise order!)",
+            "contents": "DrawTriangle3D(${1:v1}, ${2:v2}, ${3:v3}, ${4:color})"
+        },
+        {
+            "trigger": "DrawTriangleStrip3D",
+            "annotation": "Draw a triangle strip defined by points",
+            "contents": "DrawTriangleStrip3D(${1:*points}, ${2:pointCount}, ${3:color})"
+        },
+        {
+            "trigger": "DrawCube",
+            "annotation": "Draw cube",
+            "contents": "DrawCube(${1:position}, ${2:width}, ${3:height}, ${4:length}, ${5:color})"
+        },
+        {
+            "trigger": "DrawCubeV",
+            "annotation": "Draw cube (Vector version)",
+            "contents": "DrawCubeV(${1:position}, ${2:size}, ${3:color})"
+        },
+        {
+            "trigger": "DrawCubeWires",
+            "annotation": "Draw cube wires",
+            "contents": "DrawCubeWires(${1:position}, ${2:width}, ${3:height}, ${4:length}, ${5:color})"
+        },
+        {
+            "trigger": "DrawCubeWiresV",
+            "annotation": "Draw cube wires (Vector version)",
+            "contents": "DrawCubeWiresV(${1:position}, ${2:size}, ${3:color})"
+        },
+        {
+            "trigger": "DrawSphere",
+            "annotation": "Draw sphere",
+            "contents": "DrawSphere(${1:centerPos}, ${2:radius}, ${3:color})"
+        },
+        {
+            "trigger": "DrawSphereEx",
+            "annotation": "Draw sphere with extended parameters",
+            "contents": "DrawSphereEx(${1:centerPos}, ${2:radius}, ${3:rings}, ${4:slices}, ${5:color})"
+        },
+        {
+            "trigger": "DrawSphereWires",
+            "annotation": "Draw sphere wires",
+            "contents": "DrawSphereWires(${1:centerPos}, ${2:radius}, ${3:rings}, ${4:slices}, ${5:color})"
+        },
+        {
+            "trigger": "DrawCylinder",
+            "annotation": "Draw a cylinder/cone",
+            "contents": "DrawCylinder(${1:position}, ${2:radiusTop}, ${3:radiusBottom}, ${4:height}, ${5:slices}, ${6:color})"
+        },
+        {
+            "trigger": "DrawCylinderEx",
+            "annotation": "Draw a cylinder with base at startPos and top at endPos",
+            "contents": "DrawCylinderEx(${1:startPos}, ${2:endPos}, ${3:startRadius}, ${4:endRadius}, ${5:sides}, ${6:color})"
+        },
+        {
+            "trigger": "DrawCylinderWires",
+            "annotation": "Draw a cylinder/cone wires",
+            "contents": "DrawCylinderWires(${1:position}, ${2:radiusTop}, ${3:radiusBottom}, ${4:height}, ${5:slices}, ${6:color})"
+        },
+        {
+            "trigger": "DrawCylinderWiresEx",
+            "annotation": "Draw a cylinder wires with base at startPos and top at endPos",
+            "contents": "DrawCylinderWiresEx(${1:startPos}, ${2:endPos}, ${3:startRadius}, ${4:endRadius}, ${5:sides}, ${6:color})"
+        },
+        {
+            "trigger": "DrawCapsule",
+            "annotation": "Draw a capsule with the center of its sphere caps at startPos and endPos",
+            "contents": "DrawCapsule(${1:startPos}, ${2:endPos}, ${3:radius}, ${4:slices}, ${5:rings}, ${6:color})"
+        },
+        {
+            "trigger": "DrawCapsuleWires",
+            "annotation": "Draw capsule wireframe with the center of its sphere caps at startPos and endPos",
+            "contents": "DrawCapsuleWires(${1:startPos}, ${2:endPos}, ${3:radius}, ${4:slices}, ${5:rings}, ${6:color})"
+        },
+        {
+            "trigger": "DrawPlane",
+            "annotation": "Draw a plane XZ",
+            "contents": "DrawPlane(${1:centerPos}, ${2:size}, ${3:color})"
+        },
+        {
+            "trigger": "DrawRay",
+            "annotation": "Draw a ray line",
+            "contents": "DrawRay(${1:ray}, ${2:color})"
+        },
+        {
+            "trigger": "DrawGrid",
+            "annotation": "Draw a grid (centered at (0, 0, 0))",
+            "contents": "DrawGrid(${1:slices}, ${2:spacing})"
+        },
+        {
+            "trigger": "LoadModel",
+            "annotation": "Load model from files (meshes and materials)",
+            "contents": "LoadModel(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadModelFromMesh",
+            "annotation": "Load model from generated mesh (default material)",
+            "contents": "LoadModelFromMesh(${1:mesh})"
+        },
+        {
+            "trigger": "IsModelValid",
+            "annotation": "Check if a model is valid (loaded in GPU, VAO/VBOs)",
+            "contents": "IsModelValid(${1:model})"
+        },
+        {
+            "trigger": "UnloadModel",
+            "annotation": "Unload model (including meshes) from memory (RAM and/or VRAM)",
+            "contents": "UnloadModel(${1:model})"
+        },
+        {
+            "trigger": "GetModelBoundingBox",
+            "annotation": "Compute model bounding box limits (considers all meshes)",
+            "contents": "GetModelBoundingBox(${1:model})"
+        },
+        {
+            "trigger": "DrawModel",
+            "annotation": "Draw a model (with texture if set)",
+            "contents": "DrawModel(${1:model}, ${2:position}, ${3:scale}, ${4:tint})"
+        },
+        {
+            "trigger": "DrawModelEx",
+            "annotation": "Draw a model with extended parameters",
+            "contents": "DrawModelEx(${1:model}, ${2:position}, ${3:rotationAxis}, ${4:rotationAngle}, ${5:scale}, ${6:tint})"
+        },
+        {
+            "trigger": "DrawModelWires",
+            "annotation": "Draw a model wires (with texture if set)",
+            "contents": "DrawModelWires(${1:model}, ${2:position}, ${3:scale}, ${4:tint})"
+        },
+        {
+            "trigger": "DrawModelWiresEx",
+            "annotation": "Draw a model wires (with texture if set) with extended parameters",
+            "contents": "DrawModelWiresEx(${1:model}, ${2:position}, ${3:rotationAxis}, ${4:rotationAngle}, ${5:scale}, ${6:tint})"
+        },
+        {
+            "trigger": "DrawModelPoints",
+            "annotation": "Draw a model as points",
+            "contents": "DrawModelPoints(${1:model}, ${2:position}, ${3:scale}, ${4:tint})"
+        },
+        {
+            "trigger": "DrawModelPointsEx",
+            "annotation": "Draw a model as points with extended parameters",
+            "contents": "DrawModelPointsEx(${1:model}, ${2:position}, ${3:rotationAxis}, ${4:rotationAngle}, ${5:scale}, ${6:tint})"
+        },
+        {
+            "trigger": "DrawBoundingBox",
+            "annotation": "Draw bounding box (wires)",
+            "contents": "DrawBoundingBox(${1:box}, ${2:color})"
+        },
+        {
+            "trigger": "DrawBillboard",
+            "annotation": "Draw a billboard texture",
+            "contents": "DrawBillboard(${1:camera}, ${2:texture}, ${3:position}, ${4:scale}, ${5:tint})"
+        },
+        {
+            "trigger": "DrawBillboardRec",
+            "annotation": "Draw a billboard texture defined by source",
+            "contents": "DrawBillboardRec(${1:camera}, ${2:texture}, ${3:source}, ${4:position}, ${5:size}, ${6:tint})"
+        },
+        {
+            "trigger": "DrawBillboardPro",
+            "annotation": "Draw a billboard texture defined by source and rotation",
+            "contents": "DrawBillboardPro(${1:camera}, ${2:texture}, ${3:source}, ${4:position}, ${5:up}, ${6:size}, ${7:origin}, ${8:rotation}, ${9:tint})"
+        },
+        {
+            "trigger": "UploadMesh",
+            "annotation": "Upload mesh vertex data in GPU and provide VAO/VBO ids",
+            "contents": "UploadMesh(${1:*mesh}, ${2:dynamic})"
+        },
+        {
+            "trigger": "UpdateMeshBuffer",
+            "annotation": "Update mesh vertex data in GPU for a specific buffer index",
+            "contents": "UpdateMeshBuffer(${1:mesh}, ${2:index}, ${3:*data}, ${4:dataSize}, ${5:offset})"
+        },
+        {
+            "trigger": "UnloadMesh",
+            "annotation": "Unload mesh data from CPU and GPU",
+            "contents": "UnloadMesh(${1:mesh})"
+        },
+        {
+            "trigger": "DrawMesh",
+            "annotation": "Draw a 3d mesh with material and transform",
+            "contents": "DrawMesh(${1:mesh}, ${2:material}, ${3:transform})"
+        },
+        {
+            "trigger": "DrawMeshInstanced",
+            "annotation": "Draw multiple mesh instances with material and different transforms",
+            "contents": "DrawMeshInstanced(${1:mesh}, ${2:material}, ${3:*transforms}, ${4:instances})"
+        },
+        {
+            "trigger": "GetMeshBoundingBox",
+            "annotation": "Compute mesh bounding box limits",
+            "contents": "GetMeshBoundingBox(${1:mesh})"
+        },
+        {
+            "trigger": "GenMeshTangents",
+            "annotation": "Compute mesh tangents",
+            "contents": "GenMeshTangents(${1:*mesh})"
+        },
+        {
+            "trigger": "ExportMesh",
+            "annotation": "Export mesh data to file, returns true on success",
+            "contents": "ExportMesh(${1:mesh}, ${2:*fileName})"
+        },
+        {
+            "trigger": "ExportMeshAsCode",
+            "annotation": "Export mesh as code file (.h) defining multiple arrays of vertex attributes",
+            "contents": "ExportMeshAsCode(${1:mesh}, ${2:*fileName})"
+        },
+        {
+            "trigger": "GenMeshPoly",
+            "annotation": "Generate polygonal mesh",
+            "contents": "GenMeshPoly(${1:sides}, ${2:radius})"
+        },
+        {
+            "trigger": "GenMeshPlane",
+            "annotation": "Generate plane mesh (with subdivisions)",
+            "contents": "GenMeshPlane(${1:width}, ${2:length}, ${3:resX}, ${4:resZ})"
+        },
+        {
+            "trigger": "GenMeshCube",
+            "annotation": "Generate cuboid mesh",
+            "contents": "GenMeshCube(${1:width}, ${2:height}, ${3:length})"
+        },
+        {
+            "trigger": "GenMeshSphere",
+            "annotation": "Generate sphere mesh (standard sphere)",
+            "contents": "GenMeshSphere(${1:radius}, ${2:rings}, ${3:slices})"
+        },
+        {
+            "trigger": "GenMeshHemiSphere",
+            "annotation": "Generate half-sphere mesh (no bottom cap)",
+            "contents": "GenMeshHemiSphere(${1:radius}, ${2:rings}, ${3:slices})"
+        },
+        {
+            "trigger": "GenMeshCylinder",
+            "annotation": "Generate cylinder mesh",
+            "contents": "GenMeshCylinder(${1:radius}, ${2:height}, ${3:slices})"
+        },
+        {
+            "trigger": "GenMeshCone",
+            "annotation": "Generate cone/pyramid mesh",
+            "contents": "GenMeshCone(${1:radius}, ${2:height}, ${3:slices})"
+        },
+        {
+            "trigger": "GenMeshTorus",
+            "annotation": "Generate torus mesh",
+            "contents": "GenMeshTorus(${1:radius}, ${2:size}, ${3:radSeg}, ${4:sides})"
+        },
+        {
+            "trigger": "GenMeshKnot",
+            "annotation": "Generate trefoil knot mesh",
+            "contents": "GenMeshKnot(${1:radius}, ${2:size}, ${3:radSeg}, ${4:sides})"
+        },
+        {
+            "trigger": "GenMeshHeightmap",
+            "annotation": "Generate heightmap mesh from image data",
+            "contents": "GenMeshHeightmap(${1:heightmap}, ${2:size})"
+        },
+        {
+            "trigger": "GenMeshCubicmap",
+            "annotation": "Generate cubes-based map mesh from image data",
+            "contents": "GenMeshCubicmap(${1:cubicmap}, ${2:cubeSize})"
+        },
+        {
+            "trigger": "LoadMaterials",
+            "annotation": "Load materials from model file",
+            "contents": "LoadMaterials(${1:*fileName}, ${2:*materialCount})"
+        },
+        {
+            "trigger": "LoadMaterialDefault",
+            "annotation": "Load default material (Supports: DIFFUSE, SPECULAR, NORMAL maps)",
+            "contents": "LoadMaterialDefault()"
+        },
+        {
+            "trigger": "IsMaterialValid",
+            "annotation": "Check if a material is valid (shader assigned, map textures loaded in GPU)",
+            "contents": "IsMaterialValid(${1:material})"
+        },
+        {
+            "trigger": "UnloadMaterial",
+            "annotation": "Unload material from GPU memory (VRAM)",
+            "contents": "UnloadMaterial(${1:material})"
+        },
+        {
+            "trigger": "SetMaterialTexture",
+            "annotation": "Set texture for a material map type (MATERIAL_MAP_DIFFUSE, MATERIAL_MAP_SPECULAR...)",
+            "contents": "SetMaterialTexture(${1:*material}, ${2:mapType}, ${3:texture})"
+        },
+        {
+            "trigger": "SetModelMeshMaterial",
+            "annotation": "Set material for a mesh",
+            "contents": "SetModelMeshMaterial(${1:*model}, ${2:meshId}, ${3:materialId})"
+        },
+        {
+            "trigger": "LoadModelAnimations",
+            "annotation": "Load model animations from file",
+            "contents": "LoadModelAnimations(${1:*fileName}, ${2:*animCount})"
+        },
+        {
+            "trigger": "UpdateModelAnimation",
+            "annotation": "Update model animation pose (CPU)",
+            "contents": "UpdateModelAnimation(${1:model}, ${2:anim}, ${3:frame})"
+        },
+        {
+            "trigger": "UpdateModelAnimationBones",
+            "annotation": "Update model animation mesh bone matrices (GPU skinning)",
+            "contents": "UpdateModelAnimationBones(${1:model}, ${2:anim}, ${3:frame})"
+        },
+        {
+            "trigger": "UnloadModelAnimation",
+            "annotation": "Unload animation data",
+            "contents": "UnloadModelAnimation(${1:anim})"
+        },
+        {
+            "trigger": "UnloadModelAnimations",
+            "annotation": "Unload animation array data",
+            "contents": "UnloadModelAnimations(${1:*animations}, ${2:animCount})"
+        },
+        {
+            "trigger": "IsModelAnimationValid",
+            "annotation": "Check model animation skeleton match",
+            "contents": "IsModelAnimationValid(${1:model}, ${2:anim})"
+        },
+        {
+            "trigger": "CheckCollisionSpheres",
+            "annotation": "Check collision between two spheres",
+            "contents": "CheckCollisionSpheres(${1:center1}, ${2:radius1}, ${3:center2}, ${4:radius2})"
+        },
+        {
+            "trigger": "CheckCollisionBoxes",
+            "annotation": "Check collision between two bounding boxes",
+            "contents": "CheckCollisionBoxes(${1:box1}, ${2:box2})"
+        },
+        {
+            "trigger": "CheckCollisionBoxSphere",
+            "annotation": "Check collision between box and sphere",
+            "contents": "CheckCollisionBoxSphere(${1:box}, ${2:center}, ${3:radius})"
+        },
+        {
+            "trigger": "GetRayCollisionSphere",
+            "annotation": "Get collision info between ray and sphere",
+            "contents": "GetRayCollisionSphere(${1:ray}, ${2:center}, ${3:radius})"
+        },
+        {
+            "trigger": "GetRayCollisionBox",
+            "annotation": "Get collision info between ray and box",
+            "contents": "GetRayCollisionBox(${1:ray}, ${2:box})"
+        },
+        {
+            "trigger": "GetRayCollisionMesh",
+            "annotation": "Get collision info between ray and mesh",
+            "contents": "GetRayCollisionMesh(${1:ray}, ${2:mesh}, ${3:transform})"
+        },
+        {
+            "trigger": "GetRayCollisionTriangle",
+            "annotation": "Get collision info between ray and triangle",
+            "contents": "GetRayCollisionTriangle(${1:ray}, ${2:p1}, ${3:p2}, ${4:p3})"
+        },
+        {
+            "trigger": "GetRayCollisionQuad",
+            "annotation": "Get collision info between ray and quad",
+            "contents": "GetRayCollisionQuad(${1:ray}, ${2:p1}, ${3:p2}, ${4:p3}, ${5:p4})"
+        },
+        {
+            "trigger": "InitAudioDevice",
+            "annotation": "Initialize audio device and context",
+            "contents": "InitAudioDevice()"
+        },
+        {
+            "trigger": "CloseAudioDevice",
+            "annotation": "Close the audio device and context",
+            "contents": "CloseAudioDevice()"
+        },
+        {
+            "trigger": "IsAudioDeviceReady",
+            "annotation": "Check if audio device has been initialized successfully",
+            "contents": "IsAudioDeviceReady()"
+        },
+        {
+            "trigger": "SetMasterVolume",
+            "annotation": "Set master volume (listener)",
+            "contents": "SetMasterVolume(${1:volume})"
+        },
+        {
+            "trigger": "GetMasterVolume",
+            "annotation": "Get master volume (listener)",
+            "contents": "GetMasterVolume()"
+        },
+        {
+            "trigger": "LoadWave",
+            "annotation": "Load wave data from file",
+            "contents": "LoadWave(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadWaveFromMemory",
+            "annotation": "Load wave from memory buffer, fileType refers to extension: i.e. '.wav'",
+            "contents": "LoadWaveFromMemory(${1:*fileType}, ${2:*fileData}, ${3:dataSize})"
+        },
+        {
+            "trigger": "IsWaveValid",
+            "annotation": "Checks if wave data is valid (data loaded and parameters)",
+            "contents": "IsWaveValid(${1:wave})"
+        },
+        {
+            "trigger": "LoadSound",
+            "annotation": "Load sound from file",
+            "contents": "LoadSound(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadSoundFromWave",
+            "annotation": "Load sound from wave data",
+            "contents": "LoadSoundFromWave(${1:wave})"
+        },
+        {
+            "trigger": "LoadSoundAlias",
+            "annotation": "Create a new sound that shares the same sample data as the source sound, does not own the sound data",
+            "contents": "LoadSoundAlias(${1:source})"
+        },
+        {
+            "trigger": "IsSoundValid",
+            "annotation": "Checks if a sound is valid (data loaded and buffers initialized)",
+            "contents": "IsSoundValid(${1:sound})"
+        },
+        {
+            "trigger": "UpdateSound",
+            "annotation": "Update sound buffer with new data",
+            "contents": "UpdateSound(${1:sound}, ${2:*data}, ${3:sampleCount})"
+        },
+        {
+            "trigger": "UnloadWave",
+            "annotation": "Unload wave data",
+            "contents": "UnloadWave(${1:wave})"
+        },
+        {
+            "trigger": "UnloadSound",
+            "annotation": "Unload sound",
+            "contents": "UnloadSound(${1:sound})"
+        },
+        {
+            "trigger": "UnloadSoundAlias",
+            "annotation": "Unload a sound alias (does not deallocate sample data)",
+            "contents": "UnloadSoundAlias(${1:alias})"
+        },
+        {
+            "trigger": "ExportWave",
+            "annotation": "Export wave data to file, returns true on success",
+            "contents": "ExportWave(${1:wave}, ${2:*fileName})"
+        },
+        {
+            "trigger": "ExportWaveAsCode",
+            "annotation": "Export wave sample data to code (.h), returns true on success",
+            "contents": "ExportWaveAsCode(${1:wave}, ${2:*fileName})"
+        },
+        {
+            "trigger": "PlaySound",
+            "annotation": "Play a sound",
+            "contents": "PlaySound(${1:sound})"
+        },
+        {
+            "trigger": "StopSound",
+            "annotation": "Stop playing a sound",
+            "contents": "StopSound(${1:sound})"
+        },
+        {
+            "trigger": "PauseSound",
+            "annotation": "Pause a sound",
+            "contents": "PauseSound(${1:sound})"
+        },
+        {
+            "trigger": "ResumeSound",
+            "annotation": "Resume a paused sound",
+            "contents": "ResumeSound(${1:sound})"
+        },
+        {
+            "trigger": "IsSoundPlaying",
+            "annotation": "Check if a sound is currently playing",
+            "contents": "IsSoundPlaying(${1:sound})"
+        },
+        {
+            "trigger": "SetSoundVolume",
+            "annotation": "Set volume for a sound (1.0 is max level)",
+            "contents": "SetSoundVolume(${1:sound}, ${2:volume})"
+        },
+        {
+            "trigger": "SetSoundPitch",
+            "annotation": "Set pitch for a sound (1.0 is base level)",
+            "contents": "SetSoundPitch(${1:sound}, ${2:pitch})"
+        },
+        {
+            "trigger": "SetSoundPan",
+            "annotation": "Set pan for a sound (0.5 is center)",
+            "contents": "SetSoundPan(${1:sound}, ${2:pan})"
+        },
+        {
+            "trigger": "WaveCopy",
+            "annotation": "Copy a wave to a new wave",
+            "contents": "WaveCopy(${1:wave})"
+        },
+        {
+            "trigger": "WaveCrop",
+            "annotation": "Crop a wave to defined frames range",
+            "contents": "WaveCrop(${1:*wave}, ${2:initFrame}, ${3:finalFrame})"
+        },
+        {
+            "trigger": "WaveFormat",
+            "annotation": "Convert wave data to desired format",
+            "contents": "WaveFormat(${1:*wave}, ${2:sampleRate}, ${3:sampleSize}, ${4:channels})"
+        },
+        {
+            "trigger": "LoadWaveSamples",
+            "annotation": "Load samples data from wave as a 32bit float data array",
+            "contents": "LoadWaveSamples(${1:wave})"
+        },
+        {
+            "trigger": "UnloadWaveSamples",
+            "annotation": "Unload samples data loaded with LoadWaveSamples()",
+            "contents": "UnloadWaveSamples(${1:*samples})"
+        },
+        {
+            "trigger": "LoadMusicStream",
+            "annotation": "Load music stream from file",
+            "contents": "LoadMusicStream(${1:*fileName})"
+        },
+        {
+            "trigger": "LoadMusicStreamFromMemory",
+            "annotation": "Load music stream from data",
+            "contents": "LoadMusicStreamFromMemory(${1:*fileType}, ${2:*data}, ${3:dataSize})"
+        },
+        {
+            "trigger": "IsMusicValid",
+            "annotation": "Checks if a music stream is valid (context and buffers initialized)",
+            "contents": "IsMusicValid(${1:music})"
+        },
+        {
+            "trigger": "UnloadMusicStream",
+            "annotation": "Unload music stream",
+            "contents": "UnloadMusicStream(${1:music})"
+        },
+        {
+            "trigger": "PlayMusicStream",
+            "annotation": "Start music playing",
+            "contents": "PlayMusicStream(${1:music})"
+        },
+        {
+            "trigger": "IsMusicStreamPlaying",
+            "annotation": "Check if music is playing",
+            "contents": "IsMusicStreamPlaying(${1:music})"
+        },
+        {
+            "trigger": "UpdateMusicStream",
+            "annotation": "Updates buffers for music streaming",
+            "contents": "UpdateMusicStream(${1:music})"
+        },
+        {
+            "trigger": "StopMusicStream",
+            "annotation": "Stop music playing",
+            "contents": "StopMusicStream(${1:music})"
+        },
+        {
+            "trigger": "PauseMusicStream",
+            "annotation": "Pause music playing",
+            "contents": "PauseMusicStream(${1:music})"
+        },
+        {
+            "trigger": "ResumeMusicStream",
+            "annotation": "Resume playing paused music",
+            "contents": "ResumeMusicStream(${1:music})"
+        },
+        {
+            "trigger": "SeekMusicStream",
+            "annotation": "Seek music to a position (in seconds)",
+            "contents": "SeekMusicStream(${1:music}, ${2:position})"
+        },
+        {
+            "trigger": "SetMusicVolume",
+            "annotation": "Set volume for music (1.0 is max level)",
+            "contents": "SetMusicVolume(${1:music}, ${2:volume})"
+        },
+        {
+            "trigger": "SetMusicPitch",
+            "annotation": "Set pitch for a music (1.0 is base level)",
+            "contents": "SetMusicPitch(${1:music}, ${2:pitch})"
+        },
+        {
+            "trigger": "SetMusicPan",
+            "annotation": "Set pan for a music (0.5 is center)",
+            "contents": "SetMusicPan(${1:music}, ${2:pan})"
+        },
+        {
+            "trigger": "GetMusicTimeLength",
+            "annotation": "Get music time length (in seconds)",
+            "contents": "GetMusicTimeLength(${1:music})"
+        },
+        {
+            "trigger": "GetMusicTimePlayed",
+            "annotation": "Get current music time played (in seconds)",
+            "contents": "GetMusicTimePlayed(${1:music})"
+        },
+        {
+            "trigger": "LoadAudioStream",
+            "annotation": "Load audio stream (to stream raw audio pcm data)",
+            "contents": "LoadAudioStream(${1:sampleRate}, ${2:sampleSize}, ${3:channels})"
+        },
+        {
+            "trigger": "IsAudioStreamValid",
+            "annotation": "Checks if an audio stream is valid (buffers initialized)",
+            "contents": "IsAudioStreamValid(${1:stream})"
+        },
+        {
+            "trigger": "UnloadAudioStream",
+            "annotation": "Unload audio stream and free memory",
+            "contents": "UnloadAudioStream(${1:stream})"
+        },
+        {
+            "trigger": "UpdateAudioStream",
+            "annotation": "Update audio stream buffers with data",
+            "contents": "UpdateAudioStream(${1:stream}, ${2:*data}, ${3:frameCount})"
+        },
+        {
+            "trigger": "IsAudioStreamProcessed",
+            "annotation": "Check if any audio stream buffers requires refill",
+            "contents": "IsAudioStreamProcessed(${1:stream})"
+        },
+        {
+            "trigger": "PlayAudioStream",
+            "annotation": "Play audio stream",
+            "contents": "PlayAudioStream(${1:stream})"
+        },
+        {
+            "trigger": "PauseAudioStream",
+            "annotation": "Pause audio stream",
+            "contents": "PauseAudioStream(${1:stream})"
+        },
+        {
+            "trigger": "ResumeAudioStream",
+            "annotation": "Resume audio stream",
+            "contents": "ResumeAudioStream(${1:stream})"
+        },
+        {
+            "trigger": "IsAudioStreamPlaying",
+            "annotation": "Check if audio stream is playing",
+            "contents": "IsAudioStreamPlaying(${1:stream})"
+        },
+        {
+            "trigger": "StopAudioStream",
+            "annotation": "Stop audio stream",
+            "contents": "StopAudioStream(${1:stream})"
+        },
+        {
+            "trigger": "SetAudioStreamVolume",
+            "annotation": "Set volume for audio stream (1.0 is max level)",
+            "contents": "SetAudioStreamVolume(${1:stream}, ${2:volume})"
+        },
+        {
+            "trigger": "SetAudioStreamPitch",
+            "annotation": "Set pitch for audio stream (1.0 is base level)",
+            "contents": "SetAudioStreamPitch(${1:stream}, ${2:pitch})"
+        },
+        {
+            "trigger": "SetAudioStreamPan",
+            "annotation": "Set pan for audio stream (0.5 is centered)",
+            "contents": "SetAudioStreamPan(${1:stream}, ${2:pan})"
+        },
+        {
+            "trigger": "SetAudioStreamBufferSizeDefault",
+            "annotation": "Default size for new audio streams",
+            "contents": "SetAudioStreamBufferSizeDefault(${1:size})"
+        },
+        {
+            "trigger": "SetAudioStreamCallback",
+            "annotation": "Audio thread callback to request new data",
+            "contents": "SetAudioStreamCallback(${1:stream}, ${2:callback})"
+        },
+        {
+            "trigger": "AttachAudioStreamProcessor",
+            "annotation": "Attach audio stream processor to stream, receives the samples as 'float'",
+            "contents": "AttachAudioStreamProcessor(${1:stream}, ${2:processor})"
+        },
+        {
+            "trigger": "DetachAudioStreamProcessor",
+            "annotation": "Detach audio stream processor from stream",
+            "contents": "DetachAudioStreamProcessor(${1:stream}, ${2:processor})"
+        },
+        {
+            "trigger": "AttachAudioMixedProcessor",
+            "annotation": "Attach audio stream processor to the entire audio pipeline, receives the samples as 'float'",
+            "contents": "AttachAudioMixedProcessor(${1:processor})"
+        },
+        {
+            "trigger": "DetachAudioMixedProcessor",
+            "annotation": "Detach audio stream processor from the entire audio pipeline",
+            "contents": "DetachAudioMixedProcessor(${1:processor})"
+        },
+    ]
+}

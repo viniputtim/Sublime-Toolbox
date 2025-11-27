@@ -1,0 +1,24 @@
+{
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+    "font_size": 12,
+    "font_face": "fira code",
+    "index_files": true,
+    "color_scheme": "Packages/Colorsublime - Themes/Brogrammer.tmTheme",
+    "save_on_focus_lost": true,
+    "rulers": [80, 100],
+    "caret_style": "smooth",
+    "auto_complete_commit_on_tab": true,
+    "shift_tab_unindent": true,
+    "theme": "Adaptive.sublime-theme",
+    "highlight_line": true,
+    "mini_diff": false,
+    "draw_white_space": "all",
+    "translate_tabs_to_spaces": true,
+    "tab_size": 4,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+    "highlight_modified_tabs": true,
+}

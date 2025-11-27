@@ -1,0 +1,13 @@
+{
+    "selector": "source.c, source.c++",
+    "shell_cmd": "python3 -u \"${packages}/User/cpp_builder.py\" \"${file}\"",
+    "working_dir": "${file_path}",
+    "variants": [
+        {
+            "name": "Raylib",
+            "shell_cmd": "python3 -u \"${packages}/User/cpp_builder.py\" \"${file}\" \"raylib\"",
+            "working_dir": "${file_path}"
+        },
+    ]
+}
+

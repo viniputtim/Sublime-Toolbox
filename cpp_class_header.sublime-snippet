@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+# ifndef ${1:CLASS_NAME}_HPP
+# define ${1}_HPP
+
+
+class ${2:ClassName}
+{
+public:
+    ${2}();
+    ~${2}();
+};
+
+
+# endif // ${1}_HPP
+]]></content>
+<tabTrigger>
+    clsdef
+</tabTrigger>
+<scope>
+    source.c, source.c++
+</scope>
+</snippet>

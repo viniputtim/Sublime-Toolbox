@@ -1,0 +1,3 @@
+[
+    { "keys": ["ctrl+alt+g"], "command": "generate_cpp_from_hpp" }
+]
